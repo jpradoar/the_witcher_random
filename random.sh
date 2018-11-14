@@ -77,78 +77,117 @@ if [[ $1 == "1" ]]; then
 
 		Siblings1=( "1" "2" "3" "4" "5" "6" "7" "8" )
 
-
-
-
-
-
 fi
 
 ####################### Nilfgaardian_Status #############################################################
 
 if [[ $1 == "2" ]]; then
-		echo $age
-familyfate=(
-"Your family was indentured for crimes against the Empire or on trumped-up charges. Only you escaped."
-"Your family was exiled to the Korath Desert and you likely spent most of your early life struggling to survive in thedeadly wasteland."
-"Your family was killed by a  rogue mage who either had a vendetta against your family, or just wanted blood. Either way, you are alone."
-"Your family disappeared and you have no idea where they went. One day they just up and left."
-"Your family was executed for treason against the Empire. You were the only one to escape this fate."
-"Your family was stripped of its title for some reason. You were evicted from your home and left scrambling to survive among the un-washed masses."
-"Your family name was tarnished by a magic relative who flaunted their magical gift disgracefully like a Northern mage."
-"You disgraced your family in the eyes of the Empire. Something you did or failed to do has ruined your personal name and harmed your family"
-"Your family has a deep, dark secret that if discovered would destroy them and their name forever. You must protect this secret with your life."
-"Your family was assassinated. They may have been in the way of someone’s plan or they may have been used to get at someone more powerful. Either way, your family is gone now"
-)
-parentalfate=(
-"Your father died in one of the Northern Wars. He may have already been in the military or he may have been conscripted into service during that war."
-"One or more of your parents were poisoned. This may have been the work of a professional rival, or it may have been to get your parents out of the way"
-
-)
-familystatus=(
-"Aristocracy You grew up in a manor, training to be well-versed in the world of the court. The luxury was just your incentive. Starting Gear: Paper of Nobility (+2 Reputation)"
-"High Clergy You were raised among the clergy of the Great Sun. You grew up pious and always aware that the Church would guide you. Starting Gear: A Holy Symbol (+1 Courage)"
-)
-mif=(
-	"The Cult of the Great Sun Your greatest influence was the Church. You spent years learning chants and rituals. Gear: A Ceremonial Mask" 
-	"An Outcast Your greatest influence was a social outcast who taught you to always question society. Gear: A Bright Colorful Badge"
-"A Count Your greatest influence was a count who taught you how to lead and instill order. Gear: A Silver Necklace"
-
-
-)
-Siblings1=( "1" "2" "3" "4" "5" "6" "7" "8" )
+		familyfate=(
+		"Your family was indentured for crimes against the Empire or on trumped-up charges. Only you escaped."
+		"Your family was exiled to the Korath Desert and you likely spent most of your early life struggling to survive in thedeadly wasteland."
+		"Your family was killed by a  rogue mage who either had a vendetta against your family, or just wanted blood. Either way, you are alone."
+		"Your family disappeared and you have no idea where they went. One day they just up and left."
+		"Your family was executed for treason against the Empire. You were the only one to escape this fate."
+		"Your family was stripped of its title for some reason. You were evicted from your home and left scrambling to survive among the un-washed masses."
+		"Your family name was tarnished by a magic relative who flaunted their magical gift disgracefully like a Northern mage."
+		"You disgraced your family in the eyes of the Empire. Something you did or failed to do has ruined your personal name and harmed your family"
+		"Your family has a deep, dark secret that if discovered would destroy them and their name forever. You must protect this secret with your life."
+		"Your family was assassinated. They may have been in the way of someone’s plan or they may have been used to get at someone more powerful. Either way, your family is gone now"
+		)
+		parentalfate=(
+		"Your father died in one of the Northern Wars. He may have already been in the military or he may have been conscripted into service during that war."
+		"One or more of your parents were poisoned. This may have been the work of a professional rival, or it may have been to get your parents out of the way"
+		"The secret police took your parent or parents for questioning. The next week their bodies were found hung in the streets of the city."
+		"One or more of your parents were killed by a rogue mage. Most likely they tried to turn the mage in question in to the Empire and paid the price."
+		"One or more of your parents were imprisoned for unlawful magic. Maybe they actually commited the crime or maybe it was a setup." 
+		"One or more of your parents were exiled to the Korath Desert. Likely they committed a major crime but killing them would cause trouble."
+		"One or more of your parents were cursed by a mage. The mage likely had a vendetta against them."
+		"Your parents simply left you one day. You may not even know why they did it. One day your parents just disappeared."
+		"One or more of your parents were enslaved. They either commited a crime against the Empire or were set up by a rival."
+		"One or more of your parents were sent to the North as double agents. You likely don’t even know where they are now, but they’re serving the Emperor."
+		)
+		familystatus=(
+		"Aristocracy You grew up in a manor, training to be well-versed in the world of the court. The luxury was just your incentive. Starting Gear: Paper of Nobility (+2 Reputation)"
+		"High Clergy You were raised among the clergy of the Great Sun. You grew up pious and always aware that the Church would guide you. Starting Gear: A Holy Symbol (+1 Courage)"
+		"Knights You grew up knowing that your duty was to the Emperor, and that all of your luxury was a reward for your eventual service. Starting Gear: Personal Heraldry (+1 Reputation)"
+		"Artisan Family You grew up in an artisan’s shop, learning to craft products for sale around the world. You learned the value of quality. Starting Gear: 3 Common Diagrams/Formulae"
+		"Merchant Family You grew up selling products all around the Empire. You saw all kinds exotic of goods from all around the world. Starting Gear: 2 Acquaintances"
+		"Born into Servitude You were born into servitude and lived in simple quarters. You owned very little and toiled often. Starting Gear: A trained bird or serpent"
+		"Peasant Family You grew up on one of the thousands of farms across the Empire. You had little to your name but life was simple. Starting Gear: A Lucky Token (+1 Luck)"
+		)
+		mif=(
+		"The Cult of the Great Sun Your greatest influence was the Church. You spent years learning chants and rituals. Gear: A Ceremonial Mask" 
+		"An Outcast Your greatest influence was a social outcast who taught you to always question society. Gear: A Bright Colorful Badge"
+		"A Count Your greatest influence was a count who taught you how to lead and instill order. Gear: A Silver Necklace"
+		"A Mage Your greatest influence was a mage who taught you the importance of order and caution. Gear: An Emblem"
+		"A Solicitor Your greatest influence was an imperial detective. You spent a lot of time solving mysteries. Gear: A Magnifying Lens"
+		"A Mage Hunter Your greatest influence was a mage hunter who taught you to be cautious of magic and mages. Gear: A Ring with Dimeritium"
+		"A Man At Arms Your greatest influence was a soldier who shared stories of danger and excitement. Gear: A Trophy of Battle"
+		"An Artisan Your greatest influence was an artisan who taught you to appreciate skill and precision. Gear: A Trinket You Made"
+		"A Sentient Monster Your greatest influence was a sentient monster that taught you that not all monsters are evil. Gear: A Strange Totem"
+		"An Entertainer Your greatest influence was an entertainer who taught you to express yourself. Gear: A Token from a Fan"
+		)
+		Siblings1=( "1" "2" "3" "4" "5")
 
 fi
-
-
 
 
 ################################ Elderland_Status #########################################################################
 
 
-
-
-
 if [[ $1 == "3" ]]; then
 	echo $age
-	familyfate=("Your family were marked as human sympathizers and are not particularly loved in their homeland." 
+	familyfate=(
+	"Your family were marked as human sympathizers and are not particularly loved in their homeland." 
 	"Your family was ostracized for dissenting opinions and now people won’t socialize with you or your family at all." 
 	"Your family died in the Northern Wars. They may have actually fought in the war, o were casualties of war who just happened to get in the way"
+	"Your family has been caught in a feud for centuries. You may not remember why this feud started, but it is dire."
+	"Your family was stripped of its title for some reason. You were evicted from your home and left scrambling to survive."
+	"Your family turned to raiding human settlements early in your life to get food and perhaps strike back at the humans."
+	"Your family house is haunted. Most likely this is because your home was the site of many, many deaths during the war against humans."
+	"Your family has been split by a human in-law who was brought into your family by a sibling or relative. Some of your family like them and some hate them."
+	"Your family was killed by humans who thought they were Scoia’tael. They may have been slaughtered or hung with no court proceedings or trials."
+	"Your family is descended from an infamous traitor. It taints your family’s interactions with others of the elder races and has made living in the elderland difficult."
 	)
 	parentalfate=(
 	"One or more of your parents  were accused of being Scoia’tael. The people around you give your parents sidelong glances"
 	"One or more of your parents turned on your own people and sold out the elder races to the humans. Your parents are unwelcome in your homeland."
+	"One or more of your parents killed themselves out of despair. With no hope of regaining the glory of the past, they gave up and ended it."
+	"While traveling, one or more of your parents fell prey to human racism. They died in a pogrom and their bodies were displayed on pikes."
+	"One or more of your parents have become obssessed with regaining the former glory of their race. They sacrifice everything for this cause."
+	"One or more of your parents were exiled from your homeland. There are many possible reasons, from crime to dissenting opinons."
+	"One or more of your parents were cursed. You can decide what this curse is or, the Game Master can decide."
+	"Your parents gave you to another family so that you could survive, because they couldnt care for you"
+	"One or more of your parents joined the Scoia’tael in an attempt to get revenge on the humans who they see as ruining their lives."
+	"One or more of your parents died in an ‘accident’. Most likely they made a powerful enemy that finally found a way to get rid of them."
 	)
 	familystatus=(
 	"Aristocracy You grew up in a palace and were constantly reminded of the glory of the past. You were expected to live up to the legacy. Starting Gear: Paper of Nobility (+2 Reputation)"
 	"Noble Warrior You grew up as a noble warrior’s child, expected to rise to your family’s reputation and to never dishonor your heritage. Starting Gear: Personal Heraldry (+1 Reputation"
+	"Merchants You grew up among traveling merchants. Life was difficult sometimes but non-human crafts are always valuable. Starting Gear: 2 Acquaintances"	
+	"Scribe Family You grew up as the child of scribes, recording and protecting as much elderfolk history as possible. Starting Gear: A Chronicle (+1 Education)"
+	"Entertainers You grew up singing songs and performing plays. You worked backstage, helped write songs, and fixed instruments. Starting Gear: 1 Instrument & 1 Friend"
+	"Artisan Family You grew up in a family of artisans, visiting ancient palaces for inspiration and spending hours every day on projects. Starting Gear:
+	3 Common Diagrams/Formulae"
+	"Lowborn Family You grew up in a lowborn family, tending to the manors of others or working small jobs around your home city. Starting Gear: A Lucky Token (+1 Luck)"
 	)
 	mif=(
 	"A Human Your greatest influence was a human who taught you that sometimes racism is unfounded. Gear: A Straw Doll"
 	"An Artisan Your greatest influence was an artisan who taught you to appreciate great elderfolk art. Gear: A Small Token You Made"
 	"A Noble Warrior Your greatest influence was a War Dancer or a Mahakaman Defender who taught you honor. Gear: A Token of Battle"
+	"A Highborn Your greatest influence was a highborn who taught you pride and how to comport yourself. Gear: A Signet Ring" 
+	"An Entertainer Your greatest influence was an entertainer who taught you the importance of happiness and beauty. Gear: A Playbill or Ticket"
+	"A Raider Your greatest influence was a raider who taught you that you have the right to take what you need. Gear: A Satchel"
+	"A Sage Your greatest influence was a sage who taught you about the importance of elderfolk history. Gear: A Book of Tales"
+	"A Criminal your greatest influence was a criminal who taught you to follow your own rules. Gear: A Mask"
+	"A Hunter Your greatest influence was a hunter who taught you how to survive in the wilderness. Gear: A Trophy of a Hunt "
+	"A Lowland Farmer Your greatest influence was a lowland farmer who taught you how to live happily. Gear: A Farmer’s Spade"
 	)
-	Siblings1=( "1" "2" "3" "4" "5" "6" "7" "8" )
+	Siblings1="Elves can have up to 2 siblings. Roll 1d10. 
+	On a 1-2 you have one sibling. 
+	On a 9-10 you have two siblings. 
+	On a 3-8 you are an only child. 
+	Dwarves use the Nilfgaardian chart for siblings."
 fi
 
 
