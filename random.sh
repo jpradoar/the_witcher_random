@@ -3,7 +3,27 @@
 Northern_Status=1
 Nilfgaardian_Status=2
 Elderland_Status=3
-age=
+age=$2
+name=$3
+calculate_age=$($age/2)
+
+if [[ -z "$2" ]]; then
+	age="$(shuf -i 28-65 -n 1)"
+fi
+
+if [[ -z "$3" ]]; then
+        name="No Name"
+fi
+
+
+
+let resto=$calculate_ageo%2
+if [ $resto -eq 0 ]; then
+	dato_edad="2"
+else
+	dato_edad="1"
+fi
+
 
 if [[ $1 == "1" ]]; then
 		familyfate=(
@@ -67,6 +87,7 @@ fi
 ####################### Nilfgaardian_Status #############################################################
 
 if [[ $1 == "2" ]]; then
+		echo $age
 familyfate=(
 "Your family was indentured for crimes against the Empire or on trumped-up charges. Only you escaped."
 "Your family was exiled to the Korath Desert and you likely spent most of your early life struggling to survive in thedeadly wasteland."
@@ -109,6 +130,7 @@ fi
 
 
 if [[ $1 == "3" ]]; then
+	echo $age
 	familyfate=("Your family were marked as human sympathizers and are not particularly loved in their homeland." 
 	"Your family was ostracized for dissenting opinions and now people won’t socialize with you or your family at all." 
 	"Your family died in the Northern Wars. They may have actually fought in the war, o were casualties of war who just happened to get in the way"
@@ -304,6 +326,8 @@ if [ "$1" == "1" ] || [ "$1" = "2" ] || [ "$1" = "3" ] ; then
 	random_Values=${Values[$RANDOM % ${#Values[@]} ]}
 
 	echo "<div align='center'><br><h1> Lifepath </h1><br></div>"
+	echo "<b>Name:  </b>"$name " <br> "
+	echo "<b>Age:  </b>"$age " <br> "
 	echo "<b>Family Fate: </b>"$random_familyfate " <br> "
 	echo "<b>Parental Fate: </b>" $random_parentalfate " <br> "
 	echo "<b>Family Status:</b>" $random_familystatus " <br> "
@@ -361,4 +385,3 @@ if [[ -z "$1" ]]; then
 			Elderland Status    => ./randomizador.sh 3
 		"
 fi
-
