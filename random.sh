@@ -8,7 +8,6 @@ name=$2
 age=$3
 re='^[0-9]+$'
 
-
 if [[ "$xrand" == "R" ]]; then
 	xrand=$(shuf -i 1-2 -n 1)
 fi
@@ -28,52 +27,52 @@ fi
 
 if [[ $xrand == "1" ]]; then
 		familyfate=(
-		 "Your family was scattered to the winds by the wars and you have no idea where most of them are."  
-		 "Your family was imprisoned for crimes or on trumped-up charges. You were the only one to escape. You may want to free them...or maybe not."
-		 "Your family house was cursed and now either crops wont grow or specters roam the halls. It became too dangerous for you to stay in this home."
-		 "With so many wars your familys livelihood was destroyed. Your family turned to crime to survive. "
-		 "Your family accumulated a huge debt through gambling or favors from others. You need money desperately."
-		 "Your family has fallen into a feud with another family. You may not even remember why this feud started in the first place."
-		 "Due to some action or inaction your family has become hated in your home town and now no one there wants to have anything to do with them."
-		 "One day everything you had was ripped away by a bandit mob. Your family was massacred, leaving you entirely alone."
-		 "Your family has a deep, dark secret that if discovered would ruin you all completely. You can decide what this secret is, or the Game Master can decide."
-		 "Your family has come to despise each other. No one you grew up with will talk with each other any more and you’re lucky to get a passing hello from your siblings."
+		"Tu familia fue dispersada a los vientos por las guerras y no tienes idea de dónde están la mayoría de ellos".
+		"Su familia fue encarcelada por delitos o por cargos falsos. Usted fue el único que escapó. Tal vez quiera liberarlos ... o tal vez no".
+		"La casa de tu familia fue maldita y ahora los cultivos no crecen o los espectros vagan por los pasillos. Se volvió demasiado peligroso para que te quedes en esta casa".
+		"Con tantas guerras, el sustento de tu familia fue destruido. Tu familia recurrió al crimen para sobrevivir".
+		"Tu familia acumuló una enorme deuda a través del juego o favores de otros. Necesitas dinero desesperadamente".
+		"Tu familia ha caído en una pelea con otra familia. Es posible que ni siquiera recuerdes por qué comenzó esta pelea en primer lugar".
+		"Debido a alguna acción o falta de acción, su familia se ha vuelto odiada en su ciudad natal y ahora nadie quiere tener nada que ver con ellos".
+		"Un día, todo lo que tenías fue arrancado por una pandilla de bandidos. Tu familia fue masacrada, dejándote completamente solo".
+		"Tu familia tiene un secreto profundo y oscuro que, de ser descubierto, te arruinaría completamente. Puedes decidir qué es este secreto o el Maestro de Juego puede decidir".
+		"Tu familia ha venido a despreciarse unos a otros. Nadie con quien hayas crecido volverá a hablar entre sí y tienes suerte de recibir un saludo de tus hermanos".
 		)
 
 		parentalfate=(
-		"One or more of your parents were killed in the Northern Wars. Most likely your father, but it is also possible that your mother fought or was a casualty."
-		"One or more of your parents left you in the wilderness to fend for yourself. Maybe they couldn’t afford to keep you; maybe you were an accident."
-		"One or more of your parents were cursed by a mage or due to the intense hatred of someone they encountered. The curse took their life."
-		"One or more of your parents sold you for coin, or perhaps traded you for some goods or service. Your parents needed the money more than you."
-		"One or more of your parents joined a gang. You saw this gang often and were sometimes forced to work with them. "
-		"One or more of your parents were killed by monsters. It is your decision as to what they may have fallen prey to."
-		"One or more of your parents were falsely executed. They may have been a scapegoat for something or just in the wrong place."
-		"One or more of your parents died of a plague. There was nothing that could be done but try to ease their passing."
-		"One or more of your parents defected to Nilfgaard. They may have been given a deal for information or they may just have jumped the border."
-		"One or more of your parents were kidnapped by nobles. Likely it was your mother, who attracted the attention of a local lord or his son."
+		"Uno o más de tus padres fueron asesinados en las Guerras del Norte. Lo más probable es que tu padre, pero también es posible que tu madre haya luchado o haya sido una víctima".
+		"Uno o más de tus padres te dejaron en el desierto para valerse por ti mismo. Tal vez no pudieron mantenerte; tal vez fuiste un accidente".
+		"Uno o más de tus padres fueron maldecidos por un mago o debido al odio intenso de alguien con quien se encontraron. La maldición les quitó la vida".
+		"Uno o más de tus padres te vendieron por una moneda, o quizás te cambiaron por algunos bienes o servicios. Tus padres necesitaron el dinero más que tú".
+		"Uno o más de tus padres se unieron a una pandilla. Viste a esta pandilla a menudo y a veces te obligaron a trabajar con ellos".
+		"Uno o más de tus padres fueron asesinados por monstruos. Es tu decisión sobre a qué pueden haber sido presa".
+		"Uno o más de tus padres fueron falsamente ejecutados. Pueden haber sido un chivo expiatorio por algo o simplemente en el lugar equivocado".
+		"Uno o más de tus padres murieron de una plaga. No había nada que se pudiera hacer sino tratar de aliviar su muerte".
+		"Uno o más de tus padres desertaron a Nilfgaard. Es posible que se les haya dado un trato para obtener información o que hayan saltado la frontera".
+		"Uno o más de tus padres fueron secuestrados por nobles. Probablemente fue tu madre la que atrajo la atención de un señor local o de su hijo".
 		)
 
 		familystatus=(
-		"You grew up in a noble manor with servants to wait on you, but you were always expected to behave and impress. Starting Gear: Paper of Nobility (+2 Reputation)"
-		"Adopted by a Mage You were given to a mage at a young age. You lived in comfort but barely saw your caretaker, who was always busy. Starting Gear: A Chronicle (+1 Education)"
-		 "Knights You grew up in a manor where you learned to be a proper lady or lord. Your fate was set from birth. Starting Gear: Personal Heraldry (+1 Reputation)"
-		 "Merchant Family You grew up among merchants and you were always surrounded by yelling, haggling, and money. Starting Gear: 2 Acquaintances"
-		 "Artisan Family You grew up in an artisan s workshop. Your days were filled with the incessant sounds of creation, and often long. Starting Gear: 3 Common Diagrams/Formulae"
-		 "Entertainer Family You grew up with a band of performers. You may have traveled or you may have performed at a theater. Starting Gear: 1 Instrument & 1 Friend"
-		 "Peasant Family You grew up on a farm in the countryside. You didn’t have much to your name and your life was simple, but dangerous. Starting Gear: A Lucky Token (+1 Luck)"
+		"Creciste en una noble mansión con sirvientes que te esperaban, pero siempre se esperaba que te comportaras e impresionaras. Equipo de partida: Papel de la nobleza"
+		"Adoptado por un mago. Fuiste entregado a un mago a una edad temprana. Viviste cómodamente pero apenas viste a tu cuidador, que siempre estaba ocupado. Equipo de arranque: una crónica"
+		"Caballeros Creciste en una mansión donde aprendiste a ser una verdadera dama o señor. Tu destino se fijó desde el nacimiento. Equipo de partida: Heráldica personal"
+		"Familia mercante Creciste entre comerciantes y siempre estuviste rodeado de gritos, regateos y dinero. Equipo de partida: 2 conocidos"
+		"Familia de artesanos Creciste en un taller de artesanos. Tus días estuvieron llenos de los sonidos incesantes de la creación, y con frecuencia largos. Equipo de inicio: 3 Diagramas / fórmulas comunes"
+		"Familia de animadores Creciste con una banda de intérpretes. Es posible que hayas viajado o que hayas actuado en un teatro. Equipo de partida: 1 objeto para malabares y 1 amigo"
+		"Familia campesina Creciste en una granja en el campo. No tenías mucho a tu nombre y tu vida era simple, pero peligrosa. Equipo de partida: un token de suerte"
 		)
 
 		mif=(
-		 "A Church You grew up with influence from your local religion and spent hours a day at church. Gear: A Holy Text"
-		 "An Artisan Your greatest influence was an artisan who taught you to appreciate art and skill. Gear: A Token You Made"
-		 "A Count Your greatest influence was a count or countess who taught you how to compose yourself. Gear: A Silver Ring"
-		 "A Mage Your greatest influence was a mage who taught you not to fear magic and to always question. Gear: A Small Pendant" 
-		 "A Witch Your greatest influence was a village witch who taught you the importance of knowledge. Gear: A Black Magic Doll"
-		 "A Cursed Person Your greatest influence was a cursed person who taught you to never judge others too harshly. Gear: A Carved Totem"
-		 "An Entertainer Your greatest influence was an entertainer who taught you plenty about showmanship. Gear: A Playbill or Ticket"
-		 "A Merchant Your greatest influence was a merchant who taught you how to be shrewd and clever. Gear: A Coin You Earned"
-		 "A Criminal Your greatest influence was a criminal who taught you how to take care of yourself. Gear: A Mask"
-		 "A Man At Arms Your greatest influence was a soldier who taught you how to defend yourself. Gear: A Battle Trophy"
+		"Una iglesia en la que creciste con la influencia de tu religión local y pasaste horas al día en la iglesia. Equipo: un texto sagrado"
+		"Un artesano Tu mayor influencia fue un artesano que te enseñó a apreciar el arte y la habilidad. Equipo: un token que hiciste"
+		"Un Conde Tu mayor influencia fue un conde o una condesa que te enseñó a componerte. Engranaje: un anillo de plata"
+		"Un mago Tu mayor influencia fue un mago que te enseñó a no temer a la magia ya cuestionar siempre. Equipo: Un pequeño colgante"
+		"Una bruja Tu mayor influencia fue una bruja del pueblo que te enseñó la importancia del conocimiento. Equipo: una muñeca de magia negra"
+		"Una persona maldita Tu mayor influencia fue una persona maldita que te enseñó a nunca juzgar a los demás con dureza. Equipo: Un tótem tallado"
+		"Un animador Tu mayor influencia fue un animador que te enseñó mucho sobre el arte del espectáculo. Equipo: un Playbill o un ticket"
+		"Un comerciante Tu mayor influencia fue un comerciante que te enseñó a ser astuto e inteligente. Engranaje: una moneda que ganaste"
+		"Un criminal Tu mayor influencia fue un criminal que te enseñó a cuidarte. Equipo: una máscara"
+		"Un hombre en armas Tu mayor influencia fue un soldado que te enseñó cómo defenderte. Equipo: un trofeo de batalla"
 		)
 
 		Siblings1=( "1" "2" "3" "4" "5" "6" "7" "8" )
@@ -84,49 +83,49 @@ fi
 
 if [[ $xrand == "2" ]]; then
 		familyfate=(
-		"Your family was indentured for crimes against the Empire or on trumped-up charges. Only you escaped."
-		"Your family was exiled to the Korath Desert and you likely spent most of your early life struggling to survive in thedeadly wasteland."
-		"Your family was killed by a  rogue mage who either had a vendetta against your family, or just wanted blood. Either way, you are alone."
-		"Your family disappeared and you have no idea where they went. One day they just up and left."
-		"Your family was executed for treason against the Empire. You were the only one to escape this fate."
-		"Your family was stripped of its title for some reason. You were evicted from your home and left scrambling to survive among the un-washed masses."
-		"Your family name was tarnished by a magic relative who flaunted their magical gift disgracefully like a Northern mage."
-		"You disgraced your family in the eyes of the Empire. Something you did or failed to do has ruined your personal name and harmed your family"
-		"Your family has a deep, dark secret that if discovered would destroy them and their name forever. You must protect this secret with your life."
-		"Your family was assassinated. They may have been in the way of someone’s plan or they may have been used to get at someone more powerful. Either way, your family is gone now"
+		"Su familia fue contratada por delitos contra el Imperio o por cargos falsos. Sólo usted escapó".
+		"Tu familia estuvo exiliada en el desierto de Korath y es probable que hayas pasado la mayor parte de tu vida temprana luchando por sobrevivir en el desolado territorio".
+		"Tu familia fue asesinada por un mago pícaro que tuvo una venganza contra tu familia o solo quería sangre. De cualquier manera, estás solo".
+		"Tu familia desapareció y no tienes idea de a dónde fueron. Un día se levantaron y se fueron".
+		"Tu familia fue ejecutada por traición contra el Imperio. Fuiste la única en escapar de este destino".
+		"Su familia fue despojada de su título por alguna razón. Usted fue desalojada de su hogar y se fue luchando para sobrevivir entre las masas sin lavar".
+		"El nombre de tu familia fue empañado por un pariente mágico que hizo alarde de su don mágico de manera vergonzosa como un mago del norte".
+		"Has deshonrado a tu familia ante los ojos del Imperio. Algo que hiciste o dejaste de hacer ha arruinado tu nombre personal y ha dañado a tu familia"
+		"Tu familia tiene un secreto profundo y oscuro que, de ser descubierto, los destruiría a ellos y su nombre para siempre. Debes proteger este secreto con tu vida".
+		"Su familia fue asesinada. Pueden haber estado en el camino del plan de alguien o pueden haber sido utilizados para llegar a alguien más poderoso. De cualquier manera, su familia ya se ha ido"
 		)
 		parentalfate=(
-		"Your father died in one of the Northern Wars. He may have already been in the military or he may have been conscripted into service during that war."
-		"One or more of your parents were poisoned. This may have been the work of a professional rival, or it may have been to get your parents out of the way"
-		"The secret police took your parent or parents for questioning. The next week their bodies were found hung in the streets of the city."
-		"One or more of your parents were killed by a rogue mage. Most likely they tried to turn the mage in question in to the Empire and paid the price."
-		"One or more of your parents were imprisoned for unlawful magic. Maybe they actually commited the crime or maybe it was a setup." 
-		"One or more of your parents were exiled to the Korath Desert. Likely they committed a major crime but killing them would cause trouble."
-		"One or more of your parents were cursed by a mage. The mage likely had a vendetta against them."
-		"Your parents simply left you one day. You may not even know why they did it. One day your parents just disappeared."
-		"One or more of your parents were enslaved. They either commited a crime against the Empire or were set up by a rival."
-		"One or more of your parents were sent to the North as double agents. You likely don’t even know where they are now, but they’re serving the Emperor."
+		"Tu padre murió en una de las Guerras del Norte. Puede que ya haya estado en el ejército o que haya sido reclutado para el servicio durante esa guerra".
+		"Uno o más de tus padres fueron envenenados. Este puede haber sido el trabajo de un rival profesional, o puede haber sido para sacar a tus padres del camino"
+		"La policía secreta se llevó a sus padres o padres para interrogarlos. La semana siguiente, sus cuerpos fueron encontrados colgados en las calles de la ciudad".
+		"Uno o más de tus padres fueron asesinados por un mago pícaro. Lo más probable es que intentaron convertir al mago en cuestión en el Imperio y pagar el precio".
+		"Uno o más de tus padres fueron encarcelados por magia ilegal. Tal vez en realidad cometieron el crimen o tal vez fue una trampa".
+		"Uno o más de tus padres fueron exiliados al desierto de Korath. Probablemente cometieron un crimen mayor, pero matarlos causaría problemas".
+		"Uno o más de tus padres fueron maldecidos por un mago. El mago probablemente tuvo una venganza contra ellos".
+		"Tus padres simplemente te dejaron un día. Puede que ni siquiera sepas por qué lo hicieron. Un día tus padres simplemente desaparecieron".
+		"Uno o más de tus padres fueron esclavizados. O bien cometieron un crimen contra el Imperio o fueron creados por un rival".
+		"Uno o más de tus padres fueron enviados al Norte como agentes dobles. Es probable que ni siquiera sepas dónde están ahora, pero están sirviendo al Emperador".
 		)
 		familystatus=(
-		"Aristocracy You grew up in a manor, training to be well-versed in the world of the court. The luxury was just your incentive. Starting Gear: Paper of Nobility (+2 Reputation)"
-		"High Clergy You were raised among the clergy of the Great Sun. You grew up pious and always aware that the Church would guide you. Starting Gear: A Holy Symbol (+1 Courage)"
-		"Knights You grew up knowing that your duty was to the Emperor, and that all of your luxury was a reward for your eventual service. Starting Gear: Personal Heraldry (+1 Reputation)"
-		"Artisan Family You grew up in an artisan’s shop, learning to craft products for sale around the world. You learned the value of quality. Starting Gear: 3 Common Diagrams/Formulae"
-		"Merchant Family You grew up selling products all around the Empire. You saw all kinds exotic of goods from all around the world. Starting Gear: 2 Acquaintances"
-		"Born into Servitude You were born into servitude and lived in simple quarters. You owned very little and toiled often. Starting Gear: A trained bird or serpent"
-		"Peasant Family You grew up on one of the thousands of farms across the Empire. You had little to your name but life was simple. Starting Gear: A Lucky Token (+1 Luck)"
+		"Aristocracia Creciste en una mansión, entrenándote para conocer el mundo de la corte. El lujo fue solo tu incentivo. Engranaje de partida: Papel de la Nobleza"
+		"Alto clero Fuiste criado entre el clero del Gran Sol. Creciste piadoso y siempre te has dado cuenta de que la Iglesia te guiaría. Equipo de partida: un símbolo sagrado"
+		"Caballeros Usted creció sabiendo que su deber era con el Emperador, y que todo su lujo era una recompensa por su eventual servicio. Equipo de partida: Heráldica personal"
+		"Familia de artesanos Creciste en una tienda de artesanos y aprendiste a elaborar productos para la venta en todo el mundo. Aprendiste el valor de la calidad. Equipo de partida: 3 diagramas comunes / fórmulas"
+		"Merchant Family Creciste vendiendo productos en todo el Imperio. Viste todo tipo de productos exóticos de todo el mundo. Equipo de partida: 2 conocidos"
+		"Nacido en la servidumbre Naciste en la servidumbre y vivías en cuartos simples. Tenías muy poco y trabajabas a menudo. Equipo de partida: un pájaro o serpiente entrenado"
+		"Familia campesina Creciste en una de las miles de granjas en todo el Imperio. Tenías poco a tu nombre, pero la vida era simple. Equipo de partida: un token de suerte"
 		)
 		mif=(
-		"The Cult of the Great Sun Your greatest influence was the Church. You spent years learning chants and rituals. Gear: A Ceremonial Mask" 
-		"An Outcast Your greatest influence was a social outcast who taught you to always question society. Gear: A Bright Colorful Badge"
-		"A Count Your greatest influence was a count who taught you how to lead and instill order. Gear: A Silver Necklace"
-		"A Mage Your greatest influence was a mage who taught you the importance of order and caution. Gear: An Emblem"
-		"A Solicitor Your greatest influence was an imperial detective. You spent a lot of time solving mysteries. Gear: A Magnifying Lens"
-		"A Mage Hunter Your greatest influence was a mage hunter who taught you to be cautious of magic and mages. Gear: A Ring with Dimeritium"
-		"A Man At Arms Your greatest influence was a soldier who shared stories of danger and excitement. Gear: A Trophy of Battle"
-		"An Artisan Your greatest influence was an artisan who taught you to appreciate skill and precision. Gear: A Trinket You Made"
-		"A Sentient Monster Your greatest influence was a sentient monster that taught you that not all monsters are evil. Gear: A Strange Totem"
-		"An Entertainer Your greatest influence was an entertainer who taught you to express yourself. Gear: A Token from a Fan"
+		"El culto del gran sol Tu mayor influencia fue la Iglesia. Pasaste años aprendiendo cantos y rituales. Equipo: una máscara ceremonial"
+		"Un marginado Tu mayor influencia fue un marginado social que te enseñó a cuestionar siempre a la sociedad. Equipo: una insignia de colores brillantes"
+		"Un conde Su mayor influencia fue un conde que le enseñó a dirigir e inculcar el orden. Equipo: un collar de plata"
+		"Un mago Tu mayor influencia fue un mago que te enseñó la importancia del orden y la precaución. Equipo: un emblema"
+		"Un abogado Tu mayor influencia fue un detective imperial. Pasaste mucho tiempo resolviendo misterios. Equipo: una lente que magnifica"
+		"Un cazador de magos Tu mayor influencia fue un cazador de magos que te enseñó a ser cauteloso con la magia y los magos. Equipo: un anillo con dimeritium"
+		"Un hombre en armas Tu mayor influencia fue un soldado que compartió historias de peligro y emoción. Equipo: un trofeo de batalla"
+		"Un artesano Tu mayor influencia fue un artesano que te enseñó a apreciar la habilidad y la precisión. Equipo: una baratija que hiciste"
+		"Un monstruo sensible Tu mayor influencia fue un monstruo sensible que te enseñó que no todos los monstruos son malvados. Equipo: Un tótem extraño"
+		"Un animador Tu mayor influencia fue un animador que te enseñó a expresarte. Equipo: un token de un fan"
 		)
 		Siblings1=( "1" "2" "3" "4" "5")
 
@@ -138,225 +137,211 @@ fi
 
 if [[ $xrand == "3" ]]; then
 	familyfate=(
-	"Your family were marked as human sympathizers and are not particularly loved in their homeland." 
-	"Your family was ostracized for dissenting opinions and now people won’t socialize with you or your family at all." 
-	"Your family died in the Northern Wars. They may have actually fought in the war, o were casualties of war who just happened to get in the way"
-	"Your family has been caught in a feud for centuries. You may not remember why this feud started, but it is dire."
-	"Your family was stripped of its title for some reason. You were evicted from your home and left scrambling to survive."
-	"Your family turned to raiding human settlements early in your life to get food and perhaps strike back at the humans."
-	"Your family house is haunted. Most likely this is because your home was the site of many, many deaths during the war against humans."
-	"Your family has been split by a human in-law who was brought into your family by a sibling or relative. Some of your family like them and some hate them."
-	"Your family was killed by humans who thought they were Scoia’tael. They may have been slaughtered or hung with no court proceedings or trials."
-	"Your family is descended from an infamous traitor. It taints your family’s interactions with others of the elder races and has made living in the elderland difficult."
+	"Tu familia se marcó como simpatizantes humanos y no son particularmente amados en su tierra natal".
+	"Su familia fue rechazada por opiniones disidentes y ahora la gente no se socializará con usted o su familia en absoluto".
+	"Tu familia murió en las Guerras del Norte. Es posible que hayan peleado en la guerra, o fueron víctimas de la guerra quienes por casualidad se pusieron en el camino"
+	"Tu familia ha estado atrapada en una enemistad durante siglos. Tal vez no recuerdes por qué comenzó esta enemistad, pero es terrible".
+	"Su familia fue despojada de su título por alguna razón. Usted fue desalojada de su hogar y se fue luchando para sobrevivir".
+	"Tu familia recurrió a asaltar asentamientos humanos al principio de tu vida para obtener comida y tal vez contraatacar a los humanos".
+	"La casa de tu familia está encantada. Lo más probable es que esto se deba a que tu hogar fue el sitio de muchas, muchas muertes durante la guerra contra los humanos".
+	"Su familia ha sido dividida por un suegro humano que fue traído a su familia por un hermano o pariente. A algunos miembros de su familia les gustan y otros los odian".
+	"Su familia fue asesinada por humanos que pensaron que eran Scoia'tael. Es posible que hayan sido asesinados o colgados sin procedimientos judiciales ni juicios".
+	"Su familia desciende de un traidor infame. Mancha las interacciones de su familia con otras personas de las razas más viejas y ha hecho que vivir en el viejo país sea difícil".
 	)
 	parentalfate=(
-	"One or more of your parents  were accused of being Scoia’tael. The people around you give your parents sidelong glances"
-	"One or more of your parents turned on your own people and sold out the elder races to the humans. Your parents are unwelcome in your homeland."
-	"One or more of your parents killed themselves out of despair. With no hope of regaining the glory of the past, they gave up and ended it."
-	"While traveling, one or more of your parents fell prey to human racism. They died in a pogrom and their bodies were displayed on pikes."
-	"One or more of your parents have become obssessed with regaining the former glory of their race. They sacrifice everything for this cause."
-	"One or more of your parents were exiled from your homeland. There are many possible reasons, from crime to dissenting opinons."
-	"One or more of your parents were cursed. You can decide what this curse is or, the Game Master can decide."
-	"Your parents gave you to another family so that you could survive, because they couldnt care for you"
-	"One or more of your parents joined the Scoia’tael in an attempt to get revenge on the humans who they see as ruining their lives."
-	"One or more of your parents died in an ‘accident’. Most likely they made a powerful enemy that finally found a way to get rid of them."
+	"Uno o más de tus padres fueron acusados ​​de ser Scoia’tael. Las personas que te rodean miran de reojo a tus padres"
+	"Uno o más de tus padres se volvieron a tu propia gente y vendieron las razas más antiguas a los humanos. Tus padres no son bienvenidos en tu tierra natal".
+	"Uno o más de tus padres se suicidaron por desesperación. Sin ninguna esperanza de recuperar la gloria del pasado, se dieron por vencidos y terminaron".
+	"Mientras viajaban, uno o más de tus padres fueron víctimas del racismo humano. Murieron en un pogrom y sus cuerpos fueron exhibidos en picas".
+	"Uno o más de tus padres se han obsesionado con recuperar la antigua gloria de su raza. Sacrifican todo por esta causa".
+	"Uno o más de tus padres fueron exiliados de tu tierra natal. Hay muchas razones posibles, desde el crimen hasta las opiniones disidentes".
+	"Uno o más de tus padres fueron maldecidos. Puedes decidir qué es esta maldición o el Maestro de Juego puede decidir".
+	"Tus padres te dieron a otra familia para que pudieras sobrevivir, porque ellos no podían cuidar de ti"
+	"Uno o más de tus padres se unieron a la Scoia’tael en un intento de vengarse de los humanos que ven como arruinando sus vidas".
+	"Uno o más de tus padres murieron en un 'accidente'. Lo más probable es que se convirtieron en un enemigo poderoso que finalmente encontró la manera de deshacerse de ellos".
 	)
 	familystatus=(
-	"Aristocracy You grew up in a palace and were constantly reminded of the glory of the past. You were expected to live up to the legacy. Starting Gear: Paper of Nobility (+2 Reputation)"
-	"Noble Warrior You grew up as a noble warrior’s child, expected to rise to your family’s reputation and to never dishonor your heritage. Starting Gear: Personal Heraldry (+1 Reputation"
-	"Merchants You grew up among traveling merchants. Life was difficult sometimes but non-human crafts are always valuable. Starting Gear: 2 Acquaintances"	
-	"Scribe Family You grew up as the child of scribes, recording and protecting as much elderfolk history as possible. Starting Gear: A Chronicle (+1 Education)"
-	"Entertainers You grew up singing songs and performing plays. You worked backstage, helped write songs, and fixed instruments. Starting Gear: 1 Instrument & 1 Friend"
-	"Artisan Family You grew up in a family of artisans, visiting ancient palaces for inspiration and spending hours every day on projects. Starting Gear:
-	3 Common Diagrams/Formulae"
-	"Lowborn Family You grew up in a lowborn family, tending to the manors of others or working small jobs around your home city. Starting Gear: A Lucky Token (+1 Luck)"
+	"Aristocracia Creciste en un palacio y te recordaban constantemente la gloria del pasado. Se esperaba que estuvieras a la altura del legado. Arranque: Papel de la Nobleza"
+	"Noble Warrior Creciste como un niño noble guerrero, se espera que crezca en la reputación de tu familia y que nunca deshonre tu herencia. Equipo de partida: Heráldica personal"
+	"Comerciantes Creciste entre comerciantes ambulantes. La vida era difícil a veces, pero las artesanías no humanas siempre son valiosas. Equipo de partida: 2 conocidos"
+	"Scribe Family Creciste como hijo de escribas, registrando y protegiendo la mayor cantidad de historia posible de personas mayores. Equipo de inicio: una crónica"
+	"Animadores Creciste cantando canciones y tocando obras de teatro. Trabajaste en el backstage, ayudaste a escribir canciones e instrumentos fijos. Equipo de arranque: 1 instrumento y 1 amigo"
+	"Familia de artesanos Creciste en una familia de artesanos, visitando antiguos palacios en busca de inspiración y pasando horas todos los días en proyectos. Equipo de inicio: 3 Diagramas / Fórmulas Comunes "
+	"Familia Lowborn Creciste en una familia lowborn, cuidando las mansiones de otros o trabajando en pequeños empleos en tu ciudad. Equipo de partida: un token de suerte"
 	)
 	mif=(
-	"A Human Your greatest influence was a human who taught you that sometimes racism is unfounded. Gear: A Straw Doll"
-	"An Artisan Your greatest influence was an artisan who taught you to appreciate great elderfolk art. Gear: A Small Token You Made"
-	"A Noble Warrior Your greatest influence was a War Dancer or a Mahakaman Defender who taught you honor. Gear: A Token of Battle"
-	"A Highborn Your greatest influence was a highborn who taught you pride and how to comport yourself. Gear: A Signet Ring" 
-	"An Entertainer Your greatest influence was an entertainer who taught you the importance of happiness and beauty. Gear: A Playbill or Ticket"
-	"A Raider Your greatest influence was a raider who taught you that you have the right to take what you need. Gear: A Satchel"
-	"A Sage Your greatest influence was a sage who taught you about the importance of elderfolk history. Gear: A Book of Tales"
-	"A Criminal your greatest influence was a criminal who taught you to follow your own rules. Gear: A Mask"
-	"A Hunter Your greatest influence was a hunter who taught you how to survive in the wilderness. Gear: A Trophy of a Hunt "
-	"A Lowland Farmer Your greatest influence was a lowland farmer who taught you how to live happily. Gear: A Farmer’s Spade"
+	"Un humano Tu mayor influencia fue un humano que te enseñó que a veces el racismo es infundado. Equipo: una muñeca de paja"
+	"Un artesano Tu mayor influencia fue un artesano que te enseñó a apreciar el arte de los mayores. Engranajes: un pequeño símbolo que hiciste"
+	"Un guerrero noble Tu mayor influencia fue un Bailarín de guerra o un Defensor Mahakaman que te enseñó a honrarte. Equipo: un símbolo de batalla"
+	"Un noble Tu mayor influencia fue un noble que te enseñó el orgullo y cómo comportarte. Equipo: un anillo de sello"
+	"Un animador Tu mayor influencia fue un animador que te enseñó la importancia de la felicidad y la belleza. Equipo: una guía o un boleto"
+	"Un asaltante Tu mayor influencia fue un asaltante que te enseñó que tienes derecho a tomar lo que necesites. Gear: A Satchel"
+	"Un sabio Tu mayor influencia fue un sabio que te enseñó sobre la importancia de la historia de los ancianos. Equipo: Un libro de cuentos"
+	"Un criminal que tu mayor influencia fue un criminal que te enseñó a seguir tus propias reglas. Equipo: una máscara"
+	"Un cazador Tu mayor influencia fue un cazador que te enseñó cómo sobrevivir en el desierto. Equipo: Un trofeo de caza"
+	"Un granjero de tierras bajas Tu mayor influencia fue un granjero de tierras bajas que te enseñó a vivir feliz. Equipo: la pala de un granjero"
 	)
-	Siblings1="Elves can have up to 2 siblings. Roll 1d10. 
-	On a 1-2 you have one sibling. 
-	On a 9-10 you have two siblings. 
-	On a 3-8 you are an only child. 
-	Dwarves use the Nilfgaardian chart for siblings."
+	Siblings1="Los elfos pueden tener hasta 2 hermanos. Roll 1d10.
+	En un 1-2 tienes un hermano.
+	En un 9-10 tienes dos hermanos.
+	En un 3-8 eres hijo único.
+	Los enanos usan la carta nilfgaardiana para los hermanos."
 fi
 
 
 
 if [ "$xrand" == "1" ] || [ "$xrand" = "2" ] || [ "$xrand" = "3" ] ; then
 	Fortune=(
-	"Jackpot Some major event or stroke of luck brought you 1d10x100 crowns. "
-	"Find a Teacher You trained with a teacher. Gain +1 in any INT skill or start a new INT skill at +2."
-	"A Noble Owes You Something you did gained you 1 favor from a nobleman/noblewoman."
-	"Find a Combat Teacher You trained with a soldier. Gain +1 in any combat skill or start a new combat skill at +2."
-	"A Witcher Owes You You encountered a witcher at some point and managed to garner a favor from them. "
-	"Fell in with Bandits You fell in with a bandit gang. Once per month you can ask these bandits for 1 favor."
-	"Tamed a Wild Animal You tamed a wild animal you encountered in the wilderness. Roll 1d10. 1-7: Wild Dog, Wolf."
-	"A Mage Owes You You managed to garner 1 favor from a powerful mage you helped."
-	"Blessed by a Priest You were given a holy symbol that you can show to people of that faith to gain a +2 to Charisma with them."
-	"Knighted You were knighted for valor in a random kingdom. In this kingdom you gain +2 reputation and are recognized as a knight."
+	"Algún evento importante o golpe de suerte te trajo 1d10 x 100 coronas".
+	"Encuentre un maestro Entrenó con un maestro. Obtenga +1 en cualquier habilidad de INT o comience una nueva habilidad de INT en +2".
+	"Un noble te debe algo que hiciste te ganó 1 favor de un noble / noble".
+	"Encuentra un maestro de combate Entrenaste con un soldado. Gana +1 en cualquier habilidad de combate o comienza una nueva habilidad de combate con +2".
+	"Un brujo te debe. En algún momento te encontraste con un brujo y conseguiste obtener un favor de ellos".
+	"Me enamoré de los bandidos. Te encontraste con una pandilla de bandidos. Una vez al mes puedes pedirles a estos bandidos un favor".
+	"Domó un animal salvaje. Domó un animal salvaje que encontró en el desierto. Rollo 1d10. 1-7: Perro salvaje, lobo".
+	"Un mago te debe. Conseguiste obtener un favor de un mago poderoso al que ayudaste".
+	"Bendecido por un sacerdote. Te dieron un símbolo sagrado que puedes mostrar a las personas de esa fe para obtener un +2 a Carisma con ellos".
+	"Knighted: fuiste nombrado caballero por valor en un reino aleatorio. En este reino ganas +2 de reputación y eres reconocido como un caballero".
 	)
 
-	Siblings2=(
-	"Gender: Male - Age: Younger - Feelings About You: Wants You Dead - Personality: Shy"
-	"Gender: Female - Age: Younger - Feelings About You: Can’t Stand You - Personality: Aggressive"
-	"Gender: Male - Age: Younger - Feelings About You:  Jealous of You - Personality: Kind"
-	"Gender: Female - Age: Younger - Feelings About You:  No Feelings About You - Personality: Strange"
-	"Gender: Male - Age: Younger - Feelings About You:  No Feelings About You - Personality: Thoughtful"
-	"Gender: Female - Age: Older - Feelings About You:  No Feelings About You - Personality: Talkative"
-	"Gender: Male - Age: Older - Feelings About You:  No Feelings About You - Personality: Romantic"
-	"Gender: Female - Age: Older - Feelings About You:  Likes You - Personality: Stern"
-	"Gender: Male - Age: Older - Feelings About You:  Looks Up To You - Personality: Depressive"
-	)
 
 	Misfortune=(
-	"Debt You fell deeply into debt to the tune of 1d10x100 crowns."
-	"Imprisonment Something you did (or a false acusation) had you imprisoned for 1d10 months. "
-	"Addiction You contracted an addiction. You can choose. See the sidebar for addiction rules. "
-	"Lover, Friend or Relative Killed Roll 1d10.\n
-		1-5: They died in an accident\n
-		6-8: They were murdered by monsters\n
-		9-10: They were murdered by bandits.\n"
-	"False Accusation Roll 1d10.\n 
-		1-3: The accusation is theft\n
-		4-5: Its cowardice or betrayal\n
-		6-8: Its murder\n
-		9: Its rape\n
-		10: Its illegal witchcraft.\n "
-	"Hunted by the Law Roll 1d10. \n
-		1-3: Its just a few of guards\n
-		4-6: Its an entire small town\n
-		7-8: Its a major city\n
-		9-10: A whole kingdom is after you.\n"
-	"Betrayal Roll 1d10\n
-		1-3: You are being blackmailed\n
-		4-7: A secret was exposed\n
-		8-10: You were betrayed by someone very close to you. \n"
-	"Accident Roll 1d10. \n
-		1-4: You were disfigured. Change your social standing to feared\n
-		5-6: You were healing for 1d10 months\n
-		7-8: You lost a 1d10 months of memoryfrom that year\n
-		9-10: You suffer from horrible  nightmares (7 in 10 chance each time you sleep). \n"
-	"Mental or Physical Incapacitation Roll 1d10. \n
-		1-3: You were poisoned; permanently lose 5 HP\n
-		4-7: You suffer from anxiety attacks and must make Stun saves (every 5 rounds) in times of stress\n
-		8-10: You have a  major psychosis. You hear voices and are violent, irrational, and depressive. The GM controls these voices.\n"
-	"Cursed You have been cursed. See the Curse section on pg.230 to determine the details\n"
+	"Deuda Se endeudó profundamente con la suma de 1d10x100 coronas".
+	"Encarcelamiento Algo que usted hizo (o una acusación falsa) lo tuvo encarcelado por 1d10 meses".
+	"Adicción Usted contrajo una adicción. Puede elegir. Consulte la barra lateral para ver las reglas de la adicción".
+	"Amante, amigo o pariente muerto matado 1d10.\n
+	1-5: murieron en un accidente
+	6-8: Fueron asesinados por monstruos\n
+	9-10: Fueron asesinados por bandidos.\n"
+	"Tirada de acusación falsa 1d10.\n
+	1-3: La acusación es de robo\n
+	4-5: Su cobardía o traición\n
+	6-8: Su asesinato\n
+	9: Su violación\n
+	10: Su brujería ilegal.\n"
+	"Cazado por el Rollo de Ley 1d10.\n
+	1-3: Son solo algunos de los guardias.
+	4-6: Es un pueblo pequeño entero\n
+	7-8: Es una ciudad importante
+	9-10: Todo un reino te persigue.\n"
+	"Rollo de traición 1d10\n
+	1-3: Estás siendo chantajeado\n
+	4-7: Un secreto fue expuesto\n
+	8-10: Fuiste traicionado por alguien muy cercano a ti\n"
+	"Accidente Roll 1d10.\n
+	1-4: Estabas desfigurado. Cambia tu posición social a temida\n
+	5-6: Te curaste por 1d10 meses\n
+	7-8: Perdió 1d10 meses de memoria de ese año\n
+	9-10: sufres de pesadillas horribles (7 de cada 10 de posibilidades cada vez que duermes). \n"
+	"Rollo de incapacitación mental o física 1d10.\n
+	1-3: Fuiste envenenado; perder permanentemente 5 HP\n
+	4-7: Sufre de ataques de ansiedad y debe hacer salvas de aturdimiento (cada 5 rondas) en momentos de estrés\n
+	8-10: Tienes una psicosis mayor. Oyes voces y eres violento, irracional y depresivo. El GM controla estas voces.\n"
+	"Maldito Has sido maldecido. Consulta la sección Curse en la página.230 para determinar los detalles\n"
 	)
 
-	Allies=(
-	"Gender: Male - Position: A Bounty Hunter - How You Met: Saved Them from Something"
-	"Gender: Female - Position: A Mage - How You Met: Met in a Tavern"
-	"Gender: Male - Position: A Mentor or Teacher - How You Met: They Saved You from Something"
-	"Gender: Female - Position: A Childhood Friend - How You Met: They Hired You for Something"
-	"Gender: Male - Position: A Craftsman - How You Met: You Were Trapped Together"
-	"Gender: Female - Position: An Old Enemy - How You Met: You Were Forced to Work Together"
-	"Gender: Male - Position: A Duke/Duchess - How You Met: You Hired Them for Something"
-	"Gender: Female - Position: A Priest/Priestess - How You Met: You Met While Drunk and Hit It Off"
-	"Gender: Male - Position: A Soldier - How You Met: You Met While Traveling"
-	"Gender: Female - Position: A Bard - How You Met: You Fought Together"
+	Allies_position=(
+	"Un cazarrecompensas - Cómo se conoció: "
+	"Un mago"
+	"Un mentor o maestro"
+	"Un amigo de la infancia"
+	"Un artesano"
+	"Un viejo enemigo"
+	"Duque / Duquesa"
+	"Sacerdote / Sacerdotisa"
+	"Un soldado"
+	"bardo"
 	)
-
-	Enemies=(
-	"Gender: Male - Position: Ex-Friend - The Cause: Assaulted the Offended Party"
-	"Gender: Female - Position: Ex-Lover - The Cause: Caused the Loss of a Loved One"
-	"Gender: Male - Position: Relative - The Cause: Caused Major Humiliation"
-	"Gender: Female - Position: Childhood Enemy - The Cause: Caused a Curse"
-	"Gender: Male - Position: A Cultist - The Cause: Accused of Illegal Witchcraft"
-	"Gender: Female - Position: A Bard - The Cause: Turned Down Romantically"
-	"Gender: Male - Position: A Soldier - The Cause: Caused a Terrible Wound"
-	"Gender: Female - Position: A Bandit - The Cause: Blackmail"
-	"Gender: Male - Position: A Duke/Duchess - The Cause: Foiled Plans"
-	"Gender: Female - Position: A Mage - The Cause: Caused a Monster Attack"
+   Allies_know=(
+   	"te salvó de algo"
+   	"te encontraste en una taberna"
+   	"te salvaron de algo"
+   	"te contrataron para algo"
+   	"estuviste atrapado con el"
+   	"te obligaron a trabajar juntos"
+   	"lo contrataste para algo"
+   	"te conociste mientras estabas borracho y le pegaste"
+   	"te conociste mientras viajabas"   	
+   	"lucharon juntos"
+   	)
+	Enemies_position=(
+	"Ex-amigo"
+	"ex amante"
+	"Relativo"
+	"Enemigo de la infancia"
+	"Un cultista"
+	"A Bardo"
+	"Un soldado"
+	"Un bandido"
+	"Duque / Duquesa"
+	"Un mago"
 	)
-
+	Enemies_cause=(
+	"Agredió a la parte ofendida"
+	"causó la pérdida de un ser querido"
+	"Causó una gran humillación"
+	"Causó una maldición"
+	"Acusado de brujería ilegal"
+	"Rechazada Románticamente"
+	"causó una herida terrible"
+	"Chantaje"
+	"Planes frustrados"
+	"causó un ataque de monstruo"
+	)
 	la=(
-	"A Happy Love Affair"
-	"A Romantic Tragedy"
-	"A Problematic Love"
-	"Whores and Debauchery"
+	"Un amor feliz"
+	"Una tragedia romántica"
+	"Un amor problemático"
+	"Putas y libertinaje"
 	)
-
-
 	Tragedy=(
-	"Your Lover was captured by bandits some time ago and is still their captive."
-	"Your Lover mysteriously vanished one day and you don’t know where they went."
-	"Your Lover was imprisoned or exiled for crimes they may not have commited."
-	"Your Lover was taken from you by a powerful curse."
-	"Something got between you and your Lover and you were forced to kill them."
-	"Your Lover comitted suicide. You may not know why they did it."
-	"Your Lover was kidnapped by a noble and made into a concubine."
-	"A rival cut you out of the action and stole your Lover’s affection."
-	"Your Lover was killed by monsters. It may have been an accident or planned."
-	"Your Lover is a mage, a witcher, or a sentient monster, dooming the romance."
+	"Su amante fue capturado por bandidos hace algún tiempo y sigue siendo su cautivo"
+	"Tu amante desapareció misteriosamente un día y no sabes a dónde fueron"
+	"Su amante fue encarcelado o exiliado por delitos que tal vez no hayan cometido"
+	"Tu amante te fue arrebatada por una poderosa maldición"
+	"Algo se interpuso entre tú y tu Amante y fuiste obligado a matarlos"
+	"Tu amante se suicidó. Es posible que no sepas por qué lo hicieron"
+	"Tu amante fue secuestrado por un noble y convertido en una concubina"
+	"Un rival te sacó de la acción y robó el afecto de tu Amante"
+	"Tu Amante fue asesinado por monstruos. Puede haber sido un accidente o planeado"
+	"Tu amante es un mago, un brujo o un monstruo sensible, condenando el romance"
 	)
 
 	Problem=(
-	"Your Lover’s family or friends hate you and do not condone your romance."
-	"Your Lover works as a whore for a living and refuses to give up their job."
-	"Your Lover is under a minor curse such as paranoia or horrible nightmares."
-	"Your Lover slept around and refused to stop when you found out."
-	"Your Lover is insanely jealous and can’t stand you being around any possible rival."
-	"You fight constantly and nothing can stop it for long. You always descend into screaming."
-	"You’re professional rivals of some sort. You steal customers from each other often."
-	"One of you is human and the other is non-human, making your life difficult."
-	"Your Lover is already married. They may or may not be willing to leave their spouse."
-	"Your friends or family hate your Lover and do not condone your romance."
+	"La familia o los amigos de tu Amante te odian y no aprueban tu romance"
+	"Your Lover trabaja como una puta para ganarse la vida y se niega a renunciar a su trabajo"
+	"Tu Amante está bajo una maldición menor como la paranoia o pesadillas horribles"
+	"Tu Amante durmió y se negó a detenerse cuando te enteraste"
+	"Tu amante está terriblemente celoso y no puede soportar que estés cerca de cualquier posible rival"
+	"Luchas constantemente y nada puede detenerlo por mucho tiempo. Siempre desciendes a gritar"
+	"Son rivales profesionales de algún tipo. Se roban clientes entre sí con frecuencia"
+	"Uno de ustedes es humano y el otro no humano, lo que dificulta su vida"
+	"Tu amante ya está casado. Pueden o no estar dispuestos a dejar a su cónyuge"
+	"Tus amigos o familiares odian a tu amante y no aprueban tu romance"
 	)
 
-	Style=(
-	"Clothing: A Uniform - Personality: Secretive - Long & Loose: Long & Loose - Affectations: Trophies"
-	"Clothing: Traveling Clothing - Personality: Rebellious - Long & Loose: Cropped Short - Affectations:  Rings & Jewlery"
-	"Clothing: Fancy Clothing - Personality: Violent - Long & Loose: Self-Cut Short - Affectations:  Trinkets"
-	"Clothing: Ragged Clothing - Personality: Idealistic - Long & Loose: Braided - Affectations:  Tattoos"
-	"Clothing: Utilitarian Clothing - Personality: Contemplative - Long & Loose: Long & Wild - Affectations:  War Paint"
-	"Clothing: Traditional Clothing - Personality: Stern - Long & Loose: Bald - Affectations:  Shadowy Cloak"
-	"Clothing: Revealing Clothing - Personality: Deceptive - Long & Loose: Uniformly Short - Affectations:  Bright Bandanas"
-	"Clothing: Heavy Clothing - Personality: Friendly - Long & Loose: Ragged & Messy - Affectations:  Eye Patch"
-	"Clothing: Strange Clothing - Personality: Arrogant - Long & Loose: Complicated Hairstyle - Affectations:  Furs"
-	"Clothing: Flamboyant Clothing - Personality: Nervous - Long & Loose: Shaven Sides - Affectations:  Insignias & Plaques"
-	)
+	Style=("Afectaciones: Trofeos" "Afectaciones: Anillos y joyas" "Afectaciones: Baratijas" "Afectaciones: Tatuajes" "Afectaciones: Pintura de guerra" "Afectaciones: Capa sombría" "Afectaciones: Bandanas brillantes" "Afectaciones: Parche en el ojo" "Afectaciones: Pieles" "Afectaciones: Insignias y placas")
+	Personality=("Secreto" "Rebelde" "Violento" "Idealista" "Contemplativo" "Popa" "Engañoso" "Amistoso" "Arrogante" "Nervioso")
+	Values=("Dinero" "Honor" "Tu palabra" "Actividades" "Conocimiento" "Venganza" "Poder" "Amor" "Supervivencia" "Amistad" )
+	yle2=("La fortuna o la desgracia" "Aliados y enemigos" "Romance")
+	fym=("Fortuna" "Desgracia")
+	aae=("Aliados" "Enemigos")
+	Gender=("Masculino" "Femenino")
+	random_Gender=${Gender[$RANDOM % ${#Gender[@]} ]}	
 
 
-	Values=(
-	"Valued Person: A Parent - Value: Money - Feelings on People: People Are Tools to Be Used"
-	"Valued Person: A Sibling - Value:  Honor - Feelings on People: Our Kind Are Fine but Plough the Rest"
-	"Valued Person: A Lover - Value:  Your Word - Feelings on People: People Can Never Be Trusted"
-	"Valued Person: A Friend - Value:  Hedonistic Pursuits - Feelings on People: People Have to Prove Themselves"
-	"Valued Person: Yourself - Value:  Knowledge - Feelings on People: Neutral"
-	"Valued Person: A Pet - Value:  Vengeance - Feelings on People: Neutral"
-	"Valued Person: A Mentor - Value:  Power - Feelings on People: People Are Great"
-	"Valued Person: A Public Figure - Value:  Love - Feelings on People: Everyone Deserves to Die"
-	"Valued Person: A Personal Hero - Value:  Survival - Feelings on People: People Are Hedonistic Swine"
-	"Valued Person: No One - Value:  Friendship - Feelings on People: All Life Is Valuble"
-	)
-
-	yle2=("Fortune or Misfortune" "Allies and Enemies" "Romance")
-	fym=("Fortune" "Misfortune")
-	aae=("Allies" "Enemies")
+##########################################################################################
 
 	random_familyfate=${familyfate[$RANDOM % ${#familyfate[@]} ]}
 	random_parentalfate=${parentalfate[$RANDOM % ${#parentalfate[@]} ]}
 	random_familystatus=${familystatus[$RANDOM % ${#familystatus[@]} ]}
 	random_mif=${mif[$RANDOM % ${#mif[@]} ]}
 	random_Siblings1=${Siblings1[$RANDOM % ${#Siblings1[@]} ]}
-	random_Siblings2=${Siblings2[$RANDOM % ${#Siblings2[@]} ]}
 	random_yle2=${yle2[$RANDOM % ${#yle2[@]} ]}
 	result=$random_yle2
 	random_Fortune=${Fortune[$RANDOM % ${#Fortune[@]} ]}
 	random_fym=${fym[$RANDOM % ${#fym[@]} ]}
 	random_Misfortune=${Misfortune[$RANDOM % ${#Misfortune[@]} ]}
-	random_Allies=${Allies[$RANDOM % ${#Allies[@]} ]}
-	random_Enemies=${Enemies[$RANDOM % ${#Enemies[@]} ]}
 	random_aae=${aae[$RANDOM % ${#aae[@]} ]}
 	random_la=${la[$RANDOM % ${#la[@]} ]}
 	random_Tragedy=${Tragedy[$RANDOM % ${#Tragedy[@]} ]}
@@ -364,67 +349,88 @@ if [ "$xrand" == "1" ] || [ "$xrand" = "2" ] || [ "$xrand" = "3" ] ; then
 	random_Style=${Style[$RANDOM % ${#Style[@]} ]}
 	random_Values=${Values[$RANDOM % ${#Values[@]} ]}
 
+	random_Allies_position=${Allies_position[$RANDOM % ${#Allies_position[@]} ]}
+	random_Allies_know=${Allies_know[$RANDOM % ${#Allies_know[@]} ]}
+	random_Enemies_position=${Enemies_position[$RANDOM % ${#Enemies_position[@]} ]}
+	random_Enemies_cause=${Enemies_cause[$RANDOM % ${#Enemies_cause[@]} ]}
+        random_Personality=${Personality[$RANDOM % ${#Personality[@]} ]}
+
+
+##########################################################################################
+
 
 	if [ "$xrand" == "1" ]; then
-		echo "<b>Empire: Northern <br> " 
+		empire="Northern" 
 	fi
 
 	if [ "$xrand" = "2" ]; then
-		echo "<b>Empire: Nilfgaardian <br> " 
+		empire="Nilfgaardian" 
 	fi
 
 	if [ "$xrand" = "3" ] ; then
-		echo "<b>Empire: Elderland <br> " 
+		empire="Elderland"
 	fi
-
-	echo "<b>Name:  </b>"$name " <br> "
-	echo "<b>Age:  </b>"$age " <br> "
-	echo "<b>Family Fate: </b><br> "$random_familyfate " <br> "
-	echo "<b>Parental Fate: </b><br>" $random_parentalfate " <br> "
-	echo "<b>Family Status:</b><br>" $random_familystatus " <br> "
-	echo "<b>Most Influential Friend:</b><br>" $random_mif " <br> "
-	echo "<b>Siblings: </b>"
+	echo "<div align='right'>Tu nombre: ________________________</div>     <br>"
+	echo "<b>NOMBRE:  </b>" $name "<br>"
+        echo "<b>IMPERIO:</b> " $empire "  <br> "
+	echo "<b>EDAD:  </b>" $age " <br><br> "
+	echo "<b>DESTINO FAMILIAR: </b><br> "$random_familyfate " <br> "
+	echo "<b>DESTINO PATERNAL: </b><br>" $random_parentalfate " <br> "
+	echo "<b>ESTADO FAMILIAR:</b><br>" $random_familystatus " <br> "
+	echo "<b>AMIGO MAS INFLUYENTE:</b><br>" $random_mif " <br> "
+	echo "<b>HERMANOS: </b> <br>"
 	for i in `seq $random_Siblings1`; do
 		for x in $i; do
-			echo "     <b> - $x:</b>" ${Siblings2[$RANDOM % ${#Siblings2[@]} ]}""
+			Gender=("Masculino" "Femenino")
+			random_Gender=${Gender[$RANDOM % ${#Gender[@]} ]}	
+
+			xage=("Joven" "Adulto" "Anciano")
+			random_xage=${xage[$RANDOM % ${#xage[@]} ]}
+
+			Personality=("Tímido" "Agresivo" "Tipo" "Extraño" "Reflexivo" "Hablador" "Romántico" "Popa" "Depresivo" "Inmaduro")
+			random_Personality=${Personality[$RANDOM % ${#Personality[@]} ]}
+		
+			fayou=("Te quiere muerto" "No puede soportarte" "Celoso de ti" "Sin sentimientos sobre ti" "Te gusta" "Te mira" "Posesivo de ti")
+			random_fayou=${fayou[$RANDOM % ${#fayou[@]} ]}
+
+			echo "   <b> $x.- </b> Género: $random_Gender - Edad: $random_xage - Sentimientos sobre ti: $random_fayou - Personalidad: $random_Personality <br>"
 		done
 	done
-	echo "<br><b>Your Life Events: </b><br> "$result " <br> "
-	echo "<br><b>Your Personal Style: </b> "
-	echo "<b>    Style: </b>" $random_Style " "
-	echo "<b>    Values: </b>" $random_Values " <br> "
+	echo "<br><b> ESTADO PERSONAL : </b><br> "
+	echo "<b> &#9642;  Personalidad: </b> $random_Personality  <font color='red'>(Opcional para jugar)</font> <br>"
+	echo "<b> &#9642;  Estilo: </b>" $random_Style " <br>"
+	echo "<b> &#9642; Valores: </b>" $random_Values " <br> "
+	echo "<br><b>EVENTOS EN TU VIDA: </b><br> "
 
 
-	if [[ $result == "Fortune or Misfortune" ]]; then
+	if [[ $result == "La fortuna o la desgracia" ]]; then
 		if [[ $random_fym == "Fortune" ]]; then
-			echo "<b>Fortune: </b><br>"$random_Fortune " <br> "
+			echo "<b>Fortuna o Desgracia: <br>&#9642;  Fortuna: </b> "$random_Fortune " <br> "
 		else 
-			echo -e "<b>Misfortune: </b><br>"$random_Misfortune " <br> "
+			echo -e "<b>Fortuna o Desgracia: <br>&#9642;  Desgracia: </b> "$random_Misfortune " <br> "
 		fi
 	fi
 
-	if [[ $result == "Allies and Enemies" ]]; then
-		echo "<b>Allies and Enemies: </b>" 
-	        if [[ $random_aae == "Allies" ]]; then
-	                echo "<b>Allies: </b><br> "$random_Allies " <br> "
+	if [[ $result == "Aliados y enemigos" ]]; then
+	        if [[ $random_aae == "Aliados" ]]; then
+	                echo " <b>Aliados y Enemigos: <br>&#9642;  Aliados: </b> Genero: $random_Gender - Posicion: $random_Allies_position - Como se conocieron: $random_Allies_know <br> "
 	        else
-	                echo "<b>Enemies: </b><br> "$random_Enemies " <br> "
+	                echo " <b>Aliados y Enemigos: <br>&#9642;  Enemigos: </b> Genero: $random_Gender - Posicion: $random_Enemies_position - La causa: $random_Enemies_cause <br> "
 	        fi
 	fi
 
 	if [[ $result == "Romance" ]]; then
-	        echo "<b>Romance: </b>" $random_la " <br> "
-		if [[ $random_la == "A Romantic Tragedy" ]]; then
-	                echo "<b>Tragedy: </b><br> "$random_Tragedy " <br> "
-	        fi
-
-	        if [[ $random_la == "A Problematic Love" ]]; then
-	                echo "<b>Problem: </b><br> "$random_Problem " <br> "
-	        fi
+		if [[ $random_la == "Una tragedia romántica" ]]; then
+	                echo "<b>Romance: <br>&#9642; Tragedia: </b>"$random_Tragedy " <br> "
+	        elif [[ $random_la == "Un amor problemático" ]]; then
+	                echo "<b>Romance: <br>&#9642;  Problema: </b>"$random_Problem " <br> "
+	        else
+			echo "<b>&#9642; Romance: </b>" $random_la " <br> "
+		fi
 	fi
-
 fi
 
+##########################################################################################
 
 if [[ -z "$xrand" ]]; then
 	echo "
@@ -434,3 +440,4 @@ if [[ -z "$xrand" ]]; then
 			Elderland Status    => ./randomizador.sh 3
 		"
 fi
+
