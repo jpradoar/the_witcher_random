@@ -383,13 +383,13 @@ if [ "$xrand" == "1" ] || [ "$xrand" = "2" ] || [ "$xrand" = "3" ] ; then
 	echo "<b>Parental Fate: </b><br>" $random_parentalfate " <br> "
 	echo "<b>Family Status:</b><br>" $random_familystatus " <br> "
 	echo "<b>Most Influential Friend:</b><br>" $random_mif " <br> "
-	echo "<b>Siblings number: </b><br>" $random_Siblings1 " <br> "
+	echo "<b>Siblings: </b>"
 	for i in `seq $random_Siblings1`; do
 		for x in $i; do
-			echo "     <b>Siblings $x:</b>" ${Siblings2[$RANDOM % ${#Siblings2[@]} ]}" <br> "
+			echo "     <b> - $x:</b>" ${Siblings2[$RANDOM % ${#Siblings2[@]} ]}""
 		done
 	done
-	echo "<b>Your Life Events: </b><br> "$result " <br> "
+	echo "<br><b>Your Life Events: </b><br> "$result " <br> "
 	echo "<br><b>Your Personal Style: </b> "
 	echo "<b>    Style: </b>" $random_Style " "
 	echo "<b>    Values: </b>" $random_Values " <br> "
