@@ -364,7 +364,6 @@ if [ "$xrand" == "1" ] || [ "$xrand" = "2" ] || [ "$xrand" = "3" ] ; then
 	random_Style=${Style[$RANDOM % ${#Style[@]} ]}
 	random_Values=${Values[$RANDOM % ${#Values[@]} ]}
 
-	echo "<div align='center'><br><h1> Lifepath </h1><br></div>"
 
 	if [ "$xrand" == "1" ]; then
 		echo "<b>Empire: Northern <br> " 
@@ -380,49 +379,47 @@ if [ "$xrand" == "1" ] || [ "$xrand" = "2" ] || [ "$xrand" = "3" ] ; then
 
 	echo "<b>Name:  </b>"$name " <br> "
 	echo "<b>Age:  </b>"$age " <br> "
-	echo "<b>Family Fate: </b>"$random_familyfate " <br> "
-	echo "<b>Parental Fate: </b>" $random_parentalfate " <br> "
-	echo "<b>Family Status:</b>" $random_familystatus " <br> "
-	echo "<b>Most Influential Friend:</b>" $random_mif " <br> "
-	echo "<b>Siblings number: </b>" $random_Siblings1 " <br> "
+	echo "<b>Family Fate: </b><br> "$random_familyfate " <br> "
+	echo "<b>Parental Fate: </b><br>" $random_parentalfate " <br> "
+	echo "<b>Family Status:</b><br>" $random_familystatus " <br> "
+	echo "<b>Most Influential Friend:</b><br>" $random_mif " <br> "
+	echo "<b>Siblings number: </b><br>" $random_Siblings1 " <br> "
 	for i in `seq $random_Siblings1`; do
 		for x in $i; do
 			echo "     <b>Siblings $x:</b>" ${Siblings2[$RANDOM % ${#Siblings2[@]} ]}" <br> "
 		done
 	done
-	echo ""
-	echo "<br><b>Your Life Events: </b>"$result " <br> "
-
-	echo "<br><b>Your Personal Style </b> <br>"
-	echo "<b>    Style: </b>" $random_Style " <br> "
+	echo "<b>Your Life Events: </b><br> "$result " <br> "
+	echo "<br><b>Your Personal Style: </b> "
+	echo "<b>    Style: </b>" $random_Style " "
 	echo "<b>    Values: </b>" $random_Values " <br> "
 
 
 	if [[ $result == "Fortune or Misfortune" ]]; then
 		if [[ $random_fym == "Fortune" ]]; then
-			echo "<b>Fortune: </b>"$random_Fortune " <br> "
+			echo "<b>Fortune: </b><br>"$random_Fortune " <br> "
 		else 
-			echo -e "<b>Misfortune: </b>"$random_Misfortune " <br> "
+			echo -e "<b>Misfortune: </b><br>"$random_Misfortune " <br> "
 		fi
 	fi
 
 	if [[ $result == "Allies and Enemies" ]]; then
-		echo $result
+		echo "<b>Allies and Enemies: </b>" 
 	        if [[ $random_aae == "Allies" ]]; then
-	                echo "<b>Allies: </b>"$random_Allies " <br> "
+	                echo "<b>Allies: </b><br> "$random_Allies " <br> "
 	        else
-	                echo "<b>Enemies: </b>"$random_Enemies " <br> "
+	                echo "<b>Enemies: </b><br> "$random_Enemies " <br> "
 	        fi
 	fi
 
 	if [[ $result == "Romance" ]]; then
 	        echo "<b>Romance: </b>" $random_la " <br> "
 		if [[ $random_la == "A Romantic Tragedy" ]]; then
-	                echo "<b>Tragedy: </b>"$random_Tragedy " <br> "
+	                echo "<b>Tragedy: </b><br> "$random_Tragedy " <br> "
 	        fi
 
 	        if [[ $random_la == "A Problematic Love" ]]; then
-	                echo "<b>Problem: </b>"$random_Problem " <br> "
+	                echo "<b>Problem: </b><br> "$random_Problem " <br> "
 	        fi
 	fi
 
