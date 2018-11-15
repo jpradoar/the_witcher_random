@@ -7,28 +7,34 @@ Nilfgaardian = 2<br>
 Northern = 1<br>
 -->
 <br><br>
-<table>
-<tr>
-<td>
-
 <form action="script.php" method="get">
-	Class: <select name="number"> 
+<table>
+  <tr>
+  	<td>Class: </td>
+    <td>
+    <select name="number"> 
 	  <option name="number" value="3">Elderland</option>
 	  <option name="number" value="R">Nilfgaardian or Northern (random)</option>
 	</select>
-  <br>
-  Name: <input type="text" name="name" required > (sin espacios)<br>
-  Age: <input type="text" name="age"> (dejar en blanco para que la edad sea entre 28 y 65)<br>
-  <br>
-  <input type="submit" value="Crear alto PJ wacho!">
-</form>
+   </td>
 
-</td>
-</tr>
+  </tr>
+   <tr>
+    <td>Name: </td>
+    <td><input type="text" name="name" required > (sin espacios)</td>
+  </tr>
+  <tr>
+    <td>Age: </td>
+    <td><input type="text" name="age"> (dejar en blanco para que la edad sea entre 28 y 65) </td>
+
+  </tr>
+  <tr>
+  	<td></td>
+    <td><input type="submit" value="Crear!"></td>
+
+  </tr>
 </table>
-
-
-
+</form>
 
 </div>
 </html>
