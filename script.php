@@ -1,7 +1,13 @@
 <?php
 	$number = $_GET['number'];
-	$age = $_GET['age'];
 	$name = $_GET['name'];
-	$output = shell_exec('/var/www/html/./random.sh '.$number.' '. $age.' '.$name );
-	echo "<pre>$output</pre>";
+	$age = $_GET['age'];
+
+$output = shell_exec('/var/www/html/./random.sh '.$number.' '.$name.' '.$age );
+
+echo "<pre>$output</pre>";
 ?>
+<div align="center">
+<br><br><br><br>
+<button onclick="window.location.href='../'">Regenerar</button>
+</div>

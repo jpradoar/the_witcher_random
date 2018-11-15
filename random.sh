@@ -3,29 +3,30 @@
 Northern_Status=1
 Nilfgaardian_Status=2
 Elderland_Status=3
-age=$2
-name=$3
-calculate_age=$($age/2)
+xrand=$1
+name=$2
+age=$3
+re='^[0-9]+$'
 
-if [[ -z "$2" ]]; then
+
+if [[ "$xrand" == "R" ]]; then
+	xrand=$(shuf -i 1-2 -n 1)
+fi
+
+if ! [[ $3 =~ $re ]] ; then
 	age="$(shuf -i 28-65 -n 1)"
 fi
 
 if [[ -z "$3" ]]; then
+	age="$(shuf -i 28-65 -n 1)"
+fi
+
+if [[ -z "$2" ]]; then
         name="No Name"
 fi
 
 
-
-let resto=$calculate_ageo%2
-if [ $resto -eq 0 ]; then
-	dato_edad="2"
-else
-	dato_edad="1"
-fi
-
-
-if [[ $1 == "1" ]]; then
+if [[ $xrand == "1" ]]; then
 		familyfate=(
 		 "Your family was scattered to the winds by the wars and you have no idea where most of them are."  
 		 "Your family was imprisoned for crimes or on trumped-up charges. You were the only one to escape. You may want to free them...or maybe not."
@@ -81,7 +82,7 @@ fi
 
 ####################### Nilfgaardian_Status #############################################################
 
-if [[ $1 == "2" ]]; then
+if [[ $xrand == "2" ]]; then
 		familyfate=(
 		"Your family was indentured for crimes against the Empire or on trumped-up charges. Only you escaped."
 		"Your family was exiled to the Korath Desert and you likely spent most of your early life struggling to survive in thedeadly wasteland."
@@ -135,8 +136,7 @@ fi
 ################################ Elderland_Status #########################################################################
 
 
-if [[ $1 == "3" ]]; then
-	echo $age
+if [[ $xrand == "3" ]]; then
 	familyfate=(
 	"Your family were marked as human sympathizers and are not particularly loved in their homeland." 
 	"Your family was ostracized for dissenting opinions and now people won’t socialize with you or your family at all." 
@@ -192,7 +192,7 @@ fi
 
 
 
-if [ "$1" == "1" ] || [ "$1" = "2" ] || [ "$1" = "3" ] ; then
+if [ "$xrand" == "1" ] || [ "$xrand" = "2" ] || [ "$xrand" = "3" ] ; then
 	Fortune=(
 	"Jackpot Some major event or stroke of luck brought you 1d10x100 crowns. "
 	"Find a Teacher You trained with a teacher. Gain +1 in any INT skill or start a new INT skill at +2."
@@ -365,6 +365,19 @@ if [ "$1" == "1" ] || [ "$1" = "2" ] || [ "$1" = "3" ] ; then
 	random_Values=${Values[$RANDOM % ${#Values[@]} ]}
 
 	echo "<div align='center'><br><h1> Lifepath </h1><br></div>"
+
+	if [ "$xrand" == "1" ]; then
+		echo "<b>Empire: Northern <br> " 
+	fi
+
+	if [ "$xrand" = "2" ]; then
+		echo "<b>Empire: Nilfgaardian <br> " 
+	fi
+
+	if [ "$xrand" = "3" ] ; then
+		echo "<b>Empire: Elderland <br> " 
+	fi
+
 	echo "<b>Name:  </b>"$name " <br> "
 	echo "<b>Age:  </b>"$age " <br> "
 	echo "<b>Family Fate: </b>"$random_familyfate " <br> "
@@ -416,7 +429,7 @@ if [ "$1" == "1" ] || [ "$1" = "2" ] || [ "$1" = "3" ] ; then
 fi
 
 
-if [[ -z "$1" ]]; then
+if [[ -z "$xrand" ]]; then
 	echo "
 		How to use:  
 			Northern Status     => ./randomizador.sh 1

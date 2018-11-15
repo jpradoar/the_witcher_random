@@ -1,18 +1,34 @@
 <html>
+<div align="center"> <h1>The Witcher randomizador ;) </h1>
+<img src="the_witcher.png" />
+<!-- 
 Elderland = 3<br>
 Nilfgaardian = 2<br>
 Northern = 1<br>
+-->
 <br><br>
+<table>
+<tr>
+<td>
+
 <form action="script.php" method="get">
-  Number: <input type="text" name="number"><br>
-  Age: <input type="text" name="age">(dejar en blanco para que la edad sea entre 28 y 65)<br>
-  Name: <input type="text" name="name"> (sin espacios)<br>
-  <input type="submit" value="Submit">
+	Class: <select name="number"> 
+	  <option name="number" value="3">Elderland</option>
+	  <option name="number" value="R">Nilfgaardian or Northern (random)</option>
+	</select>
+  <br>
+  Name: <input type="text" name="name" required > (sin espacios)<br>
+  Age: <input type="text" name="age"> (dejar en blanco para que la edad sea entre 28 y 65)<br>
+  <br>
+  <input type="submit" value="Crear alto PJ wacho!">
 </form>
+
+</td>
+</tr>
+</table>
+
+
+
+
+</div>
 </html>
-
-
-Elderland = 3     (selecionable con imput)
-Nilfgaardian = 2  (random)
-Northern = 1      (random)
-EDAD =  input
