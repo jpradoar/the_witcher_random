@@ -53,26 +53,26 @@ if [[ $xrand == "1" ]]; then
 		)
 
 		familystatus=(
-		"Creciste en una noble mansión con sirvientes que te esperaban, pero siempre se esperaba que te comportaras e impresionaras. Equipo de partida: Papel de la nobleza"
-		"Adoptado por un mago. Fuiste entregado a un mago a una edad temprana. Viviste cómodamente pero apenas viste a tu cuidador, que siempre estaba ocupado. Equipo de arranque: una crónica"
-		"Caballeros Creciste en una mansión donde aprendiste a ser una verdadera dama o señor. Tu destino se fijó desde el nacimiento. Equipo de partida: Heráldica personal"
-		"Familia mercante Creciste entre comerciantes y siempre estuviste rodeado de gritos, regateos y dinero. Equipo de partida: 2 conocidos"
-		"Familia de artesanos Creciste en un taller de artesanos. Tus días estuvieron llenos de los sonidos incesantes de la creación, y con frecuencia largos. Equipo de inicio: 3 Diagramas / fórmulas comunes"
-		"Familia de animadores Creciste con una banda de intérpretes. Es posible que hayas viajado o que hayas actuado en un teatro. Equipo de partida: 1 objeto para malabares y 1 amigo"
-		"Familia campesina Creciste en una granja en el campo. No tenías mucho a tu nombre y tu vida era simple, pero peligrosa. Equipo de partida: un token de suerte"
+		"Creciste en una noble mansión con sirvientes que te esperaban, pero siempre se esperaba que te comportaras e impresionaras.<font color='red'><b>  Equipo de partida:Papel de la nobleza</b></font>"
+		"Adoptado por un mago. Fuiste entregado a un mago a una edad temprana. Viviste cómodamente pero apenas viste a tu cuidador, que siempre estaba ocupado.<font color='red'><b>  Equipo de arranque: una crónica</b></font>"
+		"Caballeros Creciste en una mansión donde aprendiste a ser una verdadera dama o señor. Tu destino se fijó desde el nacimiento.<font color='red'><b>  Equipo de partida: Heráldica personal</b></font>"
+		"Familia mercante Creciste entre comerciantes y siempre estuviste rodeado de gritos, regateos y dinero.<font color='red'><b>  Equipo de partida: 2 conocidos</b></font>"
+		"Familia de artesanos Creciste en un taller de artesanos. Tus días estuvieron llenos de los sonidos incesantes de la creación, y con frecuencia largos.<font color='red'><b>  Equipo de inicio: 3 Diagramas / fórmulas comunes</b></font>"
+		"Familia de animadores Creciste con una banda de intérpretes. Es posible que hayas viajado o que hayas actuado en un teatro.<font color='red'><b>  Equipo de partida: 1 objeto para malabares y 1 amigo</b></font>"
+		"Familia campesina Creciste en una granja en el campo. No tenías mucho a tu nombre y tu vida era simple, pero peligrosa.<font color='red'><b>  Equipo de partida: un token de suerte</b></font>"
 		)
 
 		mif=(
-		"Una iglesia en la que creciste con la influencia de tu religión local y pasaste horas al día en la iglesia. Equipo: un texto sagrado"
-		"Un artesano Tu mayor influencia fue un artesano que te enseñó a apreciar el arte y la habilidad. Equipo: un token que hiciste"
-		"Un Conde Tu mayor influencia fue un conde o una condesa que te enseñó a componerte. Engranaje: un anillo de plata"
-		"Un mago Tu mayor influencia fue un mago que te enseñó a no temer a la magia ya cuestionar siempre. Equipo: Un pequeño colgante"
-		"Una bruja Tu mayor influencia fue una bruja del pueblo que te enseñó la importancia del conocimiento. Equipo: una muñeca de magia negra"
-		"Una persona maldita Tu mayor influencia fue una persona maldita que te enseñó a nunca juzgar a los demás con dureza. Equipo: Un tótem tallado"
-		"Un animador Tu mayor influencia fue un animador que te enseñó mucho sobre el arte del espectáculo. Equipo: un Playbill o un ticket"
-		"Un comerciante Tu mayor influencia fue un comerciante que te enseñó a ser astuto e inteligente. Engranaje: una moneda que ganaste"
-		"Un criminal Tu mayor influencia fue un criminal que te enseñó a cuidarte. Equipo: una máscara"
-		"Un hombre en armas Tu mayor influencia fue un soldado que te enseñó cómo defenderte. Equipo: un trofeo de batalla"
+		"Una iglesia en la que creciste con la influencia de tu religión local y pasaste horas al día en la iglesia. <font color='red'><b> Equipo: un texto sagrado </b></font> "
+		"Un artesano Tu mayor influencia fue un artesano que te enseñó a apreciar el arte y la habilidad. <font color='red'><b> Equipo: un token que hiciste </b></font> "
+		"Un Conde Tu mayor influencia fue un conde o una condesa que te enseñó a componerte. <font color='red'><b> Engranaje: un anillo de plata </b></font> "
+		"Un mago Tu mayor influencia fue un mago que te enseñó a no temer a la magia ya cuestionar siempre. <font color='red'><b> Equipo: Un pequeño colgante</b></font> "
+		"Una bruja Tu mayor influencia fue una bruja del pueblo que te enseñó la importancia del conocimiento. <font color='red'><b> Equipo: una muñeca de magia negra</b></font> "
+		"Una persona maldita Tu mayor influencia fue una persona maldita que te enseñó a nunca juzgar a los demás con dureza. <font color='red'><b> Equipo: Un tótem tallado</b></font> "
+		"Un animador Tu mayor influencia fue un animador que te enseñó mucho sobre el arte del espectáculo. <font color='red'><b> Equipo: un Playbill o un ticket</b></font> "
+		"Un comerciante Tu mayor influencia fue un comerciante que te enseñó a ser astuto e inteligente. <font color='red'><b> Engranaje: una moneda que ganaste</b></font> "
+		"Un criminal Tu mayor influencia fue un criminal que te enseñó a cuidarte. <font color='red'><b> Equipo: una máscara</b></font>"
+		"Un hombre en armas Tu mayor influencia fue un soldado que te enseñó cómo defenderte. <font color='red'><b> Equipo: un trofeo de batalla</b></font>"
 		)
 
 		Siblings1=( "1" "2" "3" "4" "5" "6" "7" "8" )
@@ -107,25 +107,25 @@ if [[ $xrand == "2" ]]; then
 		"Uno o más de tus padres fueron enviados al Norte como agentes dobles. Es probable que ni siquiera sepas dónde están ahora, pero están sirviendo al Emperador".
 		)
 		familystatus=(
-		"Aristocracia Creciste en una mansión, entrenándote para conocer el mundo de la corte. El lujo fue solo tu incentivo. Engranaje de partida: Papel de la Nobleza"
-		"Alto clero Fuiste criado entre el clero del Gran Sol. Creciste piadoso y siempre te has dado cuenta de que la Iglesia te guiaría. Equipo de partida: un símbolo sagrado"
-		"Caballeros Usted creció sabiendo que su deber era con el Emperador, y que todo su lujo era una recompensa por su eventual servicio. Equipo de partida: Heráldica personal"
-		"Familia de artesanos Creciste en una tienda de artesanos y aprendiste a elaborar productos para la venta en todo el mundo. Aprendiste el valor de la calidad. Equipo de partida: 3 diagramas comunes / fórmulas"
-		"Merchant Family Creciste vendiendo productos en todo el Imperio. Viste todo tipo de productos exóticos de todo el mundo. Equipo de partida: 2 conocidos"
-		"Nacido en la servidumbre Naciste en la servidumbre y vivías en cuartos simples. Tenías muy poco y trabajabas a menudo. Equipo de partida: un pájaro o serpiente entrenado"
-		"Familia campesina Creciste en una de las miles de granjas en todo el Imperio. Tenías poco a tu nombre, pero la vida era simple. Equipo de partida: un token de suerte"
+		"Aristocracia Creciste en una mansión, entrenándote para conocer el mundo de la corte. El lujo fue solo tu incentivo. <font color='red'><b>Engranaje de partida: Papel de la Nobleza</b></font>"
+		"Alto clero Fuiste criado entre el clero del Gran Sol. Creciste piadoso y siempre te has dado cuenta de que la Iglesia te guiaría. <font color='red'><b>Equipo de partida: un símbolo sagrado</b></font>"
+		"Caballeros Usted creció sabiendo que su deber era con el Emperador, y que todo su lujo era una recompensa por su eventual servicio. <font color='red'><b>Equipo de partida: Heráldica personal</b></font>"
+		"Familia de artesanos Creciste en una tienda de artesanos y aprendiste a elaborar productos para la venta en todo el mundo. Aprendiste el valor de la calidad. <font color='red'><b>Equipo de partida: 3 diagramas comunes / fórmulas</b></font>"
+		"Merchant Family Creciste vendiendo productos en todo el Imperio. Viste todo tipo de productos exóticos de todo el mundo. <font color='red'><b>Equipo de partida: 2 conocidos</b></font>"
+		"Nacido en la servidumbre Naciste en la servidumbre y vivías en cuartos simples. Tenías muy poco y trabajabas a menudo. <font color='red'><b>Equipo de partida: un pájaro o serpiente entrenado</b></font>"
+		"Familia campesina Creciste en una de las miles de granjas en todo el Imperio. Tenías poco a tu nombre, pero la vida era simple. <font color='red'><b>Equipo de partida: un token de suerte</b></font>"
 		)
 		mif=(
-		"El culto del gran sol Tu mayor influencia fue la Iglesia. Pasaste años aprendiendo cantos y rituales. Equipo: una máscara ceremonial"
-		"Un marginado Tu mayor influencia fue un marginado social que te enseñó a cuestionar siempre a la sociedad. Equipo: una insignia de colores brillantes"
-		"Un conde Su mayor influencia fue un conde que le enseñó a dirigir e inculcar el orden. Equipo: un collar de plata"
-		"Un mago Tu mayor influencia fue un mago que te enseñó la importancia del orden y la precaución. Equipo: un emblema"
-		"Un abogado Tu mayor influencia fue un detective imperial. Pasaste mucho tiempo resolviendo misterios. Equipo: una lente que magnifica"
-		"Un cazador de magos Tu mayor influencia fue un cazador de magos que te enseñó a ser cauteloso con la magia y los magos. Equipo: un anillo con dimeritium"
-		"Un hombre en armas Tu mayor influencia fue un soldado que compartió historias de peligro y emoción. Equipo: un trofeo de batalla"
-		"Un artesano Tu mayor influencia fue un artesano que te enseñó a apreciar la habilidad y la precisión. Equipo: una baratija que hiciste"
-		"Un monstruo sensible Tu mayor influencia fue un monstruo sensible que te enseñó que no todos los monstruos son malvados. Equipo: Un tótem extraño"
-		"Un animador Tu mayor influencia fue un animador que te enseñó a expresarte. Equipo: un token de un fan"
+		"El culto del gran sol Tu mayor influencia fue la Iglesia. Pasaste años aprendiendo cantos y rituales.<font color='red'><b> Equipo: una máscara ceremonial</b></font>"
+		"Un marginado Tu mayor influencia fue un marginado social que te enseñó a cuestionar siempre a la sociedad.<font color='red'><b> Equipo: una insignia de colores brillantes</b></font>"
+		"Un conde Su mayor influencia fue un conde que le enseñó a dirigir e inculcar el orden.<font color='red'><b> Equipo: un collar de plata</b></font>"
+		"Un mago Tu mayor influencia fue un mago que te enseñó la importancia del orden y la precaución.<font color='red'><b> Equipo: un emblema</b></font>"
+		"Un abogado Tu mayor influencia fue un detective imperial. Pasaste mucho tiempo resolviendo misterios.<font color='red'><b> Equipo: una lente que magnifica</b></font>"
+		"Un cazador de magos Tu mayor influencia fue un cazador de magos que te enseñó a ser cauteloso con la magia y los magos.<font color='red'><b> Equipo: un anillo con dimeritium</b></font>"
+		"Un hombre en armas Tu mayor influencia fue un soldado que compartió historias de peligro y emoción.<font color='red'><b> Equipo: un trofeo de batalla</b></font>"
+		"Un artesano Tu mayor influencia fue un artesano que te enseñó a apreciar la habilidad y la precisión.<font color='red'><b> Equipo: una baratija que hiciste</b></font>"
+		"Un monstruo sensible Tu mayor influencia fue un monstruo sensible que te enseñó que no todos los monstruos son malvados.<font color='red'><b> Equipo: Un tótem extraño</b></font>"
+		"Un animador Tu mayor influencia fue un animador que te enseñó a expresarte.<font color='red'><b> Equipo: un token de un fan</b></font>"
 		)
 		Siblings1=( "1" "2" "3" "4" "5")
 
@@ -161,25 +161,25 @@ if [[ $xrand == "3" ]]; then
 	"Uno o más de tus padres murieron en un 'accidente'. Lo más probable es que se convirtieron en un enemigo poderoso que finalmente encontró la manera de deshacerse de ellos".
 	)
 	familystatus=(
-	"Aristocracia Creciste en un palacio y te recordaban constantemente la gloria del pasado. Se esperaba que estuvieras a la altura del legado. Arranque: Papel de la Nobleza"
-	"Noble Warrior Creciste como un niño noble guerrero, se espera que crezca en la reputación de tu familia y que nunca deshonre tu herencia. Equipo de partida: Heráldica personal"
-	"Comerciantes Creciste entre comerciantes ambulantes. La vida era difícil a veces, pero las artesanías no humanas siempre son valiosas. Equipo de partida: 2 conocidos"
-	"Scribe Family Creciste como hijo de escribas, registrando y protegiendo la mayor cantidad de historia posible de personas mayores. Equipo de inicio: una crónica"
-	"Animadores Creciste cantando canciones y tocando obras de teatro. Trabajaste en el backstage, ayudaste a escribir canciones e instrumentos fijos. Equipo de arranque: 1 instrumento y 1 amigo"
-	"Familia de artesanos Creciste en una familia de artesanos, visitando antiguos palacios en busca de inspiración y pasando horas todos los días en proyectos. Equipo de inicio: 3 Diagramas / Fórmulas Comunes "
-	"Familia Lowborn Creciste en una familia lowborn, cuidando las mansiones de otros o trabajando en pequeños empleos en tu ciudad. Equipo de partida: un token de suerte"
+	"Aristocracia Creciste en un palacio y te recordaban constantemente la gloria del pasado. Se esperaba que estuvieras a la altura del legado.<font color='red'><b> Arranque: Papel de la Nobleza</b></font>"
+	"Noble Warrior Creciste como un niño noble guerrero, se espera que crezca en la reputación de tu familia y que nunca deshonre tu herencia.<font color='red'><b> Equipo de partida: Heráldica personal</b></font>"
+	"Comerciantes Creciste entre comerciantes ambulantes. La vida era difícil a veces, pero las artesanías no humanas siempre son valiosas.<font color='red'><b> Equipo de partida: 2 conocidos</b></font>"
+	"Scribe Family Creciste como hijo de escribas, registrando y protegiendo la mayor cantidad de historia posible de personas mayores.<font color='red'><b> Equipo de inicio: una crónica</b></font>"
+	"Animadores Creciste cantando canciones y tocando obras de teatro. Trabajaste en el backstage, ayudaste a escribir canciones e instrumentos fijos.<font color='red'><b> Equipo de arranque: 1 instrumento (cualquiera y opcional) y 1 amigo</b></font>"
+	"Familia de artesanos Creciste en una familia de artesanos, visitando antiguos palacios en busca de inspiración y pasando horas todos los días en proyectos.<font color='red'><b> Equipo de inicio: 3 Diagramas / Fórmulas Comunes </b></font>"
+	"Familia Lowborn Creciste en una familia lowborn, cuidando las mansiones de otros o trabajando en pequeños empleos en tu ciudad.<font color='red'><b> Equipo de partida: un token de suerte</b></font>"
 	)
 	mif=(
-	"Un humano Tu mayor influencia fue un humano que te enseñó que a veces el racismo es infundado. Equipo: una muñeca de paja"
-	"Un artesano Tu mayor influencia fue un artesano que te enseñó a apreciar el arte de los mayores. Engranajes: un pequeño símbolo que hiciste"
-	"Un guerrero noble Tu mayor influencia fue un Bailarín de guerra o un Defensor Mahakaman que te enseñó a honrarte. Equipo: un símbolo de batalla"
-	"Un noble Tu mayor influencia fue un noble que te enseñó el orgullo y cómo comportarte. Equipo: un anillo de sello"
-	"Un animador Tu mayor influencia fue un animador que te enseñó la importancia de la felicidad y la belleza. Equipo: una guía o un boleto"
-	"Un asaltante Tu mayor influencia fue un asaltante que te enseñó que tienes derecho a tomar lo que necesites. Gear: A Satchel"
-	"Un sabio Tu mayor influencia fue un sabio que te enseñó sobre la importancia de la historia de los ancianos. Equipo: Un libro de cuentos"
-	"Un criminal que tu mayor influencia fue un criminal que te enseñó a seguir tus propias reglas. Equipo: una máscara"
-	"Un cazador Tu mayor influencia fue un cazador que te enseñó cómo sobrevivir en el desierto. Equipo: Un trofeo de caza"
-	"Un granjero de tierras bajas Tu mayor influencia fue un granjero de tierras bajas que te enseñó a vivir feliz. Equipo: la pala de un granjero"
+	"Un humano Tu mayor influencia fue un humano que te enseñó que a veces el racismo es infundado.<font color='red'><b>  Equipo: una muñeca de paja</b></font>"
+	"Un artesano Tu mayor influencia fue un artesano que te enseñó a apreciar el arte de los mayores.<font color='red'><b>  Engranajes: un pequeño símbolo que hiciste</b></font>"
+	"Un guerrero noble Tu mayor influencia fue un Bailarín de guerra o un Defensor Mahakaman que te enseñó a honrarte.<font color='red'><b>  Equipo: un símbolo de batalla</b></font>"
+	"Un noble Tu mayor influencia fue un noble que te enseñó el orgullo y cómo comportarte.<font color='red'><b>  Equipo: un anillo de sello</b></font>"
+	"Un animador Tu mayor influencia fue un animador que te enseñó la importancia de la felicidad y la belleza.<font color='red'><b>  Equipo: una guía o un boleto</b></font>"
+	"Un asaltante Tu mayor influencia fue un asaltante que te enseñó que tienes derecho a tomar lo que necesites.<font color='red'><b>  Equipo: Una taleguilla</b> (La taleguilla es el calzón que forma parte del traje usado en la lidia por los toreros.)</font>"
+	"Un sabio Tu mayor influencia fue un sabio que te enseñó sobre la importancia de la historia de los ancianos.<font color='red'><b>  Equipo: Un libro de cuentos</b></font>"
+	"Un criminal que tu mayor influencia fue un criminal que te enseñó a seguir tus propias reglas.<font color='red'><b>  Equipo: una máscara</b></font>"
+	"Un cazador Tu mayor influencia fue un cazador que te enseñó cómo sobrevivir en el desierto.<font color='red'><b>  Equipo: Un trofeo de caza</b></font>"
+	"Un granjero de tierras bajas Tu mayor influencia fue un granjero de tierras bajas que te enseñó a vivir feliz.<font color='red'><b>  Equipo: la pala de un granjero</b></font>"
 	)
 	Siblings1="Los elfos pueden tener hasta 2 hermanos. Roll 1d10.
 	En un 1-2 tienes un hermano.
@@ -206,10 +206,10 @@ if [ "$xrand" == "1" ] || [ "$xrand" = "2" ] || [ "$xrand" = "3" ] ; then
 
 
 	Misfortune=(
-	"Deuda Se endeudó profundamente con la suma de 1d10x100 coronas".
-	"Encarcelamiento Algo que usted hizo (o una acusación falsa) lo tuvo encarcelado por 1d10 meses".
-	"Adicción Usted contrajo una adicción. Puede elegir. Consulte la barra lateral para ver las reglas de la adicción".
-	"Amante, amigo o pariente muerto matado 1d10.\n
+	"Se endeudó profundamente con la suma de 1d10x100 coronas".
+	"Algo que usted hizo (o una acusación falsa) lo tuvo encarcelado por 1d10 meses".
+	"Usted contrajo una adicción. Puede elegir. Consulte al GM o el libro".
+	"Amante, amigo o pariente muerto o matado 1d10.\n
 	1-5: murieron en un accidente
 	6-8: Fueron asesinados por monstruos\n
 	9-10: Fueron asesinados por bandidos.\n"
@@ -237,11 +237,11 @@ if [ "$xrand" == "1" ] || [ "$xrand" = "2" ] || [ "$xrand" = "3" ] ; then
 	1-3: Fuiste envenenado; perder permanentemente 5 HP\n
 	4-7: Sufre de ataques de ansiedad y debe hacer salvas de aturdimiento (cada 5 rondas) en momentos de estrés\n
 	8-10: Tienes una psicosis mayor. Oyes voces y eres violento, irracional y depresivo. El GM controla estas voces.\n"
-	"Maldito Has sido maldecido. Consulta la sección Curse en la página.230 para determinar los detalles\n"
+	"Has sido maldecido. Consulta la sección Curse en la página.230 para determinar los detalles\n"
 	)
 
 	Allies_position=(
-	"Un cazarrecompensas - Cómo se conoció: "
+	"Un cazarrecompensas"
 	"Un mago"
 	"Un mentor o maestro"
 	"Un amigo de la infancia"
